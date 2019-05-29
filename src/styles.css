@@ -5,6 +5,53 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 400;
-    
+    margin: 0;
+    padding: 0;
+    display: block;
+    }
 
+ul.sidebar-list {
+    margin: 0;
+    padding: 15px 0 0;
+    list-style: none;
+}
+li.sidebar-list-item {
+    display: block;
+    position: relative;
+    float: none;
+    padding: 0;
+}
+.sidebar-icons {
+    margin-right: 6px;
+    font-size: 22px;
+    margin-top: 10px;
+    color: #5983e8;
+}
+.sidebar-list-item-link {
+    display: flex;
+    height: 42px;
+    padding-left: 18px;
+    font-size: 13px;
+    text-decoration: none;
+    line-height: 42px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.selected{background-color: #f0f8ff;}
+.sidebar-header {
+    color: #aaaaaa;
+    padding-left: 15px;
+    padding-top: 15px;
+    display: block;
+    font-size: 16px;
+    
+}
+.main-content {
+    min-height: 700px;
+    background-color: #f7f7f7;
+    margin-left: 230px;
+    padding-top: 69px;
+}
+.content {
+    padding: 30px;
 }

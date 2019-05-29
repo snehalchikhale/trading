@@ -1,0 +1,19 @@
+.siderbar{
+    display: block;
+    padding-bottom: 15px;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    z-index: 20;
+    padding-top: 70px;
+    box-shadow: 1px 0 20px rgba(0,0,0,.08);
+}
+.media-menu .mat-expansion-panel-header {
+    padding-left: 0px;
+}
+.media-menu .mat-expansion-panel {
+    box-shadow: none;
+}
+li.sidebar-list-item:hover {
+    background-color: rgba(0,0,0,.04);
+}

@@ -1,0 +1,27 @@
+<div class="siderbar" [ngStyle]="{width: width + 'px'}">
+  <div class="slimScrollDiv">
+    <span class="sidebar-header" *ngIf="hide">MENU</span>
+      <ul class="sidebar-list">
+          <li class="sidebar-list-item selected" routerLink=""><p class="sidebar-list-item-link"><mat-icon class="sidebar-icons">settings_input_svideo</mat-icon><span *ngIf="hide">Dashboard</span></p></li>
+          <li class="sidebar-list-item " routerLink="/user-mngt"><p class="sidebar-list-item-link"><mat-icon class="sidebar-icons">group</mat-icon><span *ngIf="hide">User Management</span></p></li>
+          <li class="sidebar-list-item " routerLink="/acoounting"><p class="sidebar-list-item-link"><mat-icon class="sidebar-icons">group_work</mat-icon><span *ngIf="hide">Accounting</span></p></li>
+          <li class="sidebar-list-item " routerLink="/access-control"><p class="sidebar-list-item-link"><mat-icon class="sidebar-icons">toggle_on</mat-icon><span *ngIf="hide">Access Control</span></p></li>
+          <li class="sidebar-list-item " routerLink="/features-control"><p class="sidebar-list-item-link"><mat-icon class="sidebar-icons">videogame_asset</mat-icon><span *ngIf="hide">Features Control</span></p></li>
+          <li class="sidebar-list-item " routerLink="/advt-mngt"><p class="sidebar-list-item-link"><mat-icon class="sidebar-icons">tv</mat-icon><span *ngIf="hide">Advertisement Management</span></p></li>
+          <!-- <li class="sidebar-list-item " routerLink="/news"><p class="sidebar-list-item-link"><mat-icon class="sidebar-icons">volume_up</mat-icon><span *ngIf="hide">media</span></p><span></span></li> -->
+          <li class="sidebar-list-item "><mat-accordion class="media-menu">
+              <mat-expansion-panel>
+              <mat-expansion-panel-header>
+              <mat-panel-title>
+              <p class="sidebar-list-item-link"><mat-icon class="sidebar-icons">volume_up</mat-icon><span *ngIf="hide">Media</span></p>
+              </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="sidebar-list-item-link" routerLink="/blog"><mat-icon class="sidebar-icons">import_contacts</mat-icon><span>Blog</span></p>
+              <p class="sidebar-list-item-link" routerLink="/news"><mat-icon class="sidebar-icons">chrome_reader_mode</mat-icon><span>News</span></p>
+              </mat-expansion-panel>
+              </mat-accordion></li>
+          <li class="sidebar-list-item " routerLink="/cms"><p class="sidebar-list-item-link"><mat-icon class="sidebar-icons">border_color</mat-icon><span *ngIf="hide">CMS</span></p></li>
+          
+        </ul>
+  </div>
+</div>

@@ -18,7 +18,13 @@ import { AdvtMngtComponent } from './admin/advt-mngt/advt-mngt.component';
 import { BlogComponent } from './admin/media/blog/blog.component';
 import { NewsComponent } from './admin/media/news/news.component';
 import { CmsComponent } from './admin/cms/cms.component';
-
+import {MatIconModule} from '@angular/material/icon';
+import { SidebarComponent } from './admin/common/sidebar/sidebar.component';
+import { SharedService } from './service/shared.service';
+import { MainContentComponent } from './admin/common/main-content/main-content.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -33,7 +39,9 @@ import { CmsComponent } from './admin/cms/cms.component';
     AdvtMngtComponent,
     BlogComponent,
     NewsComponent,
-    CmsComponent
+    CmsComponent,
+    SidebarComponent,
+    MainContentComponent
    
   ],
   imports: [
@@ -42,10 +50,13 @@ import { CmsComponent } from './admin/cms/cms.component';
     BrowserAnimationsModule,
     MatButtonModule,
     MatCheckboxModule,
-    NgbModule
-    
+    NgbModule,
+    MatIconModule,
+    MatExpansionModule,
+    MatFormFieldModule,
+    MatListModule
   ],
-  providers: [],
+  providers: [SharedService, ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

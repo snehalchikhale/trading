@@ -1,14 +1,26 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-2 logo-img">
-     <p><img src="assets/images/trading-logo.png" alt="trading logo"width="100" class="aligncenter"></p>
-    </div>
-    <div class="col-md-10 header-right">
-     <div class="row">
-       <div class="col-md-4">
-         <i class="material-icons toggle-icon">menu</i>
-       </div>
-     </div>
-    </div>
-  </div>
-</div>
+  <header class="topbar">
+      <nav class="navbar top-navbar navbar-expand-md navbar-light">
+          <div class="navbar-header"><img src="assets/images/trading-logo.png" alt="trading logo" width="120" class="aligncenter trading-img"></div>
+          <div class="navbar-collapse">
+            <div class="navbar topbar-header">
+              <div class="navbar-item togglebtn">
+                  <a class="nav-link sidebartoggler waves-effect waves-dark" (click)="openToggel()"><mat-icon class="toggle-icon" id="toggle">menu</mat-icon></a>
+              </div>
+              <div class="navbar-item">
+                  <input type="text" class="form-control search-box" placeholder="Search Here">
+                </div>
+                <div class="navbar-item profile">
+                    <img src="assets/images/avtar.jpg" class="avtar"><span class="avtar-title">Shwetambari</span>
+                </div>
+            </div>
+              <!-- <ul class="navbar-nav mr-auto mt-md-0 navbar-ul">
+                  <li class="nav-item m-l-10"><a class="nav-link sidebartoggler waves-effect waves-dark" (click)="openToggel()"><mat-icon class="toggle-icon" id="toggle">menu</mat-icon></a>
+                  </li>
+                  <li class="nav-item m-l-10"><input type="text" class="form-control search-box" placeholder="Search Here"></li>
+                  <li class="nav-item m-l-10"><img src="assets/images/avtar.jpg" class="avtar"><span class="avtar-title">Shwetambari</span></li>
+                    
+              </ul> -->
+          </div>
+      </nav>
+  </header>
+  

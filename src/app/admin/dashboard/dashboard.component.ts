@@ -1,4 +1,5 @@
 import { Component} from '@angular/core';
+import { SharedService } from '../../service/shared.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -6,10 +7,20 @@ import { Component} from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent{
+   panelOpenState = false;
 
-  constructor() { }
-
+  constructor(private shared:SharedService) { }
+  margin_left:number=230;
+  // data:string='Dashboard';
   ngOnInit() {
-  }
 
+    this.shared.aToggleEvent.subscribe((data:string) => {
+      console.log('check', data);
+      if(data=='Ok'){
+        this.margin_left=60;
+      }else{
+        this.margin_left = 230;
+      }
+    });
+  }
 }

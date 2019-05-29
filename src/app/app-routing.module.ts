@@ -9,8 +9,11 @@ import { AdvtMngtComponent } from './admin/advt-mngt/advt-mngt.component';
 import { BlogComponent } from './admin/media/blog/blog.component';
 import { NewsComponent } from './admin/media/news/news.component';
 import { CmsComponent } from './admin/cms/cms.component';
+// import { MainContentComponent } from './admin/common/main-content/main-content.component'
+
 
 const routes: Routes = [
+  // {path: '',component:MainContentComponent},
   {path: '',component:DashboardComponent},
   {path: 'user-mngt',component:UserMngtComponent},
   {path: 'acoounting',component:AccountingComponent},
