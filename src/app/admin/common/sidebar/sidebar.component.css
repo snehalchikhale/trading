@@ -7,13 +7,26 @@
     z-index: 20;
     padding-top: 70px;
     box-shadow: 1px 0 20px rgba(0,0,0,.08);
+    transition: 0.1s all ease;
+    background-color: #fff;
 }
 .media-menu .mat-expansion-panel-header {
     padding-left: 0px;
+    padding-right: 0px;
 }
 .media-menu .mat-expansion-panel {
     box-shadow: none;
+    background-color: transparent;
 }
 li.sidebar-list-item:hover {
     background-color: rgba(0,0,0,.04);
 }
+.expand-more-i ,.expand-less-i{
+    color: #a9a9a9;
+}
+/*  */
+/* .media-menu .mat-expansion-panel-body{padding: 0px !important;} */
+/* .mat-expansion-indicator:after{
+    margin-right: -41px !important;
+    margin-top: -9px !important;
+} */

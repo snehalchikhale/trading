@@ -1,0 +1,142 @@
+<app-header-trading></app-header-trading>
+<app-submenubar></app-submenubar>
+<app-topadv></app-topadv>
+<div class="main-page-content">
+            <div class="container-fluid">
+                   <div class="row">
+                        <div class="left-side col-md-2">
+                                <div class="adv-left-image text-left">
+                                        <p><img src="assets/images/left-adv.png"></p>
+                                      </div>
+                        </div>
+                        <div class="middle-content col-md-8">
+                           <div class="row mtnly-repo">
+                             <div class="col-md-7 algn-self">
+                              <h5 class="sub-title algn-self">Monthly Status Report</h5>
+                             </div>
+                             <div class="col-md-3 algn-self">
+                              <mat-form-field>
+                                <mat-label>Select Year</mat-label>
+                                <mat-select>
+                                  <mat-option>
+                                    2010
+                                  </mat-option>
+                                  <mat-option>
+                                    2011
+                                  </mat-option>
+                                  <mat-option>
+                                    2012
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                            </div>
+                            <div class="col-md-2 algn-self">
+                              <button mat-button [matMenuTriggerFor]="menu"><i class="material-icons">more_vert</i></button>
+                              <mat-menu #menu="matMenu">
+                                <button mat-menu-item>Daily Status</button>
+                                <button mat-menu-item>Weekly Status</button>
+                                <button mat-menu-item>Monthly Status</button>
+                                <button mat-menu-item>Quarterly Status</button>
+                                <button mat-menu-item>Semi Annual Status</button>
+                                <button mat-menu-item>Annual Status</button>
+                              </mat-menu>
+                            </div>
+                            <hr>
+                            <div class="col-md-12">
+                                
+                                <img src="assets/images/status-repo.png" width="100%">
+                              </div>
+                            </div>
+                            <div class="row">
+                            
+                           </div>
+                           <div class="row">
+                             <div class="col-md-12">
+                               <h5 class="sub-title mb-4">Status Report</h5>
+                               <div class="tbl">
+                                  <table class="table commn-table sts-rpt-tbl ">
+                                      <thead>
+                                        <tr>
+                                          <th>Status</th>
+                                          <th>Daily Status</th>
+                                          <th>Weekly Status</th>
+                                          <th>Monthly Status</th>
+                                          <th>Quarterly Status</th>
+                                          <th>Semi Annual Status</th>
+                                          <th>Annual Status</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                         <td>No. Of Trades</td>
+                                         <td>10</td>
+                                         <td>12</td>
+                                         <td>15</td>
+                                         <td>14</td>
+                                         <td>20</td>
+                                         <td>09</td>
+                                        </tr>
+                                        <tr>
+                                         <td>No. Of Trades</td>
+                                         <td>10</td>
+                                         <td>12</td>
+                                         <td>15</td>
+                                         <td>14</td>
+                                         <td>20</td>
+                                         <td>09</td>
+                                        </tr>
+                                        <tr>
+                                         <td>No. Of Trades</td>
+                                         <td>10</td>
+                                         <td>12</td>
+                                         <td>15</td>
+                                         <td>14</td>
+                                         <td>20</td>
+                                         <td>09</td>
+                                        </tr>
+                                        <tr>
+                                         <td>No. Of Trades</td>
+                                         <td>10</td>
+                                         <td>12</td>
+                                         <td>15</td>
+                                         <td>14</td>
+                                         <td>20</td>
+                                         <td>09</td>
+                                        </tr>
+                                        <tr>
+                                         <td>No. Of Trades</td>
+                                         <td>10</td>
+                                         <td>12</td>
+                                         <td>15</td>
+                                         <td>14</td>
+                                         <td>20</td>
+                                         <td>09</td>
+                                        </tr>
+                                        <tr>
+                                         <td>No. Of Trades</td>
+                                         <td>10</td>
+                                         <td>12</td>
+                                         <td>15</td>
+                                         <td>14</td>
+                                         <td>20</td>
+                                         <td>09</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                               </div>
+                               
+                             </div>
+                           </div>
+                            </div>
+                        <div class="right-side col-md-2 text-right">
+                                <div class="adv-right-image">
+                                        <p><img src="assets/images/right-adv.png"></p>
+                                      </div>
+                        </div>
+                   </div>
+                </div>
+
+        
+</div>
+
+<app-footer-trading></app-footer-trading>

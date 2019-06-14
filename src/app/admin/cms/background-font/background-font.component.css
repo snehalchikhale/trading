@@ -1,0 +1,40 @@
+.page-content1 {
+    padding: 8px 0px 16px 0px !important;
+}
+.background-font
+{
+    padding: 8px 0px 8px 10px;
+}
+
+button.export.save {
+    padding: 0px 35px;
+}
+
+.Normal {
+    display: -webkit-box;
+}
+
+h6.Heading.text {
+    width: 60px;
+    margin-left: 8px;
+}
+
+.color {
+    margin-top: 7px;
+}
+
+img.color.gray {
+    margin-left: -8px;
+}
+
+.heading
+{
+   margin-top: 24px;
+}
+span.font {
+    width: 65px;
+    display: inline-block;
+}
+.row.page-content1.menu_section.Blog_Pages1.background-head {
+    padding-bottom: 15px !important;
+}

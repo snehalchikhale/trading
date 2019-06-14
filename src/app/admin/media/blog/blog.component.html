@@ -1,9 +1,285 @@
 <app-header></app-header>
 <app-sidebar></app-sidebar>
 <div class="main-content" [ngStyle]="{'margin-left': margin_left + 'px'}">
-  <div class="content">
-      <h2>blogs</h2>
-  </div>
+  <mat-card class="main-mat-card">
+    <div class="row">
+      <div class="col-md-12">
+          <mat-tab-group >
+              <mat-tab label="Admin">
+                  <mat-card class="blog_card">
+                    <div class="row page-content Blog_Pages">
+
+                        <div class="col-md-6">
+                            <p> All Blog Pages </p>
+                         </div>
+                         
+                         <div class="col-md-6 text-right">
+                            <button class="mat-raised-button export" (click)="addNewBlogs()" >Add New Page</button>
+                         </div>
+                       </div>
+                      <div class="row page-content">
+                          <table class="table commn-table">
+                              <thead>
+                                <tr>
+                                   <th>Pages</th>
+                                   <th>Date Created</th>
+                                   <th>Created By</th>
+                                   <th>Hold/Active</th>
+                                   <th>Action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Want a visual explanation?</td>
+                                  <td>10 Jan 2019</td>
+                                  <td>Admin</td>
+                                  <td><mat-slide-toggle></mat-slide-toggle></td>
+                                  <td>
+                                      <div class="icons">
+                                          <i class="material-icons" routerLink="/edit-blog">edit</i>
+                                          <i class="material-icons delete">delete</i>
+                                       </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td>Which Currencies Can You Trade?</td>
+                                    <td>05 Feb 2019</td>
+                                    <td>Admin</td>
+                                    <td><mat-slide-toggle></mat-slide-toggle></td>
+                                    <td>
+                                        <div class="icons">
+                                                <i class="material-icons" routerLink="/edit-blog">edit</i>
+                                            <i class="material-icons delete">delete</i>
+                                         </div>
+                                    </td>
+                                  
+                                 </tr>
+                                 <tr>
+                                     <td>Leverage Currency Trading/td>
+                                     <td>15 Feb 2019</td>
+                                     <td>Admin</td>
+                                     <td><mat-slide-toggle></mat-slide-toggle></td>
+                                     <td>
+                                        <div class="icons">
+                                                <i class="material-icons" routerLink="/edit-blog">edit</i>
+                                            <i class="material-icons delete">delete</i>
+                                         </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                     <td>How to Open Your First Currency Deal</td>
+                                     <td>20 Mar 2019</td>
+                                     <td>Admin</td>
+                                     <td><mat-slide-toggle></mat-slide-toggle></td>
+                                     <td>
+                                        <div class="icons">
+                                                <i class="material-icons" routerLink="/edit-blog">edit</i>
+                                            <i class="material-icons delete">delete</i>
+                                         </div>
+                                    </td>
+                                  
+                                  </tr>
+                                  <tr>
+                                     <td>The key elements of Forex Trading </td>
+                                     <td>10 Jan 2019</td>
+                                     <td>Admin</td>
+                                     <td><mat-slide-toggle></mat-slide-toggle></td>
+                                     <td>
+                                        <div class="icons">
+                                                <i class="material-icons" routerLink="/edit-blog">edit</i>
+                                            <i class="material-icons delete">delete</i>
+                                         </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                      <td>Want to learn more about currency trading?</td>
+                                      <td>05 Feb 2019</td>
+                                      <td>Admin</td>
+                                      <td><mat-slide-toggle></mat-slide-toggle></td>
+                                      <td>
+                                          <div class="icons">
+                                                <i class="material-icons" routerLink="/edit-blog">edit</i>
+                                              <i class="material-icons delete">delete</i>
+                                           </div>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>Powerful trading platforms</td>
+                                      <td>15 Feb 2019</td>
+                                      <td>Admin</td>
+                                      <td><mat-slide-toggle></mat-slide-toggle></td>
+                                      <td>
+                                          <div class="icons">
+                                                <i class="material-icons" routerLink="/edit-blog">edit</i>
+                                              <i class="material-icons delete">delete</i>
+                                           </div>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>Leverage our experts</td>
+                                      <td>20 Mar 2019</td>
+                                      <td>Admin</td>
+                                      <td><mat-slide-toggle></mat-slide-toggle></td>
+                                      <td>
+                                          <div class="icons">
+                                                <i class="material-icons" routerLink="/edit-blog">edit</i>
+                                              <i class="material-icons delete">delete</i>
+                                           </div>
+                                      </td>
+                                  </tr>
+                              </tbody>
+
+                            
+                            </table>
+                            <!-- <mat-paginator  [length]="100"
+                            [pageSize]="10"
+                            [pageSizeOptions]="[5, 10, 25, 100]">
+                            </mat-paginator> -->
+                      </div>
+                    </mat-card>
+                  </mat-tab>
+
+                  <mat-tab label="User">
+                      <mat-card class="blog_card">
+                        <div class="row page-content Blog_Pages">
+    
+                            <div class="col-md-6">
+                                <p> All Blog Pages </p>
+                             </div>
+                             
+                             <div class="col-md-6 text-right">
+                                <button class="mat-raised-button export" (click)="addNewBlogs()" >Add New Page</button>
+                             </div>
+                           </div>
+                          <div class="row page-content">
+                              <table class="table commn-table">
+                                  <thead>
+                                    <tr>
+                                       <th>Pages</th>
+                                       <th>Date Created</th>
+                                       <th>Created By</th>
+                                       <th>Hold/Active</th>
+                                       <th>Action</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>Want a visual explanation?</td>
+                                      <td>10 Jan 2019</td>
+                                      <td>Admin</td>
+                                      <td><mat-slide-toggle></mat-slide-toggle></td>
+                                      <td>
+                                          <div class="icons">
+                                              <i class="material-icons" >edit</i>
+                                              <i class="material-icons delete">delete</i>
+                                           </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Which Currencies Can You Trade?</td>
+                                        <td>05 Feb 2019</td>
+                                        <td>Admin</td>
+                                        <td><mat-slide-toggle></mat-slide-toggle></td>
+                                        <td>
+                                            <div class="icons">
+                                                <i class="material-icons">edit</i>
+                                                <i class="material-icons delete">delete</i>
+                                             </div>
+                                        </td>
+                                      
+                                     </tr>
+                                     <tr>
+                                         <td>Leverage Currency Trading/td>
+                                         <td>15 Feb 2019</td>
+                                         <td>Admin</td>
+                                         <td><mat-slide-toggle></mat-slide-toggle></td>
+                                         <td>
+                                            <div class="icons">
+                                                <i class="material-icons">edit</i>
+                                                <i class="material-icons delete">delete</i>
+                                             </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                         <td>How to Open Your First Currency Deal</td>
+                                         <td>20 Mar 2019</td>
+                                         <td>Admin</td>
+                                         <td><mat-slide-toggle></mat-slide-toggle></td>
+                                         <td>
+                                            <div class="icons">
+                                                <i class="material-icons">edit</i>
+                                                <i class="material-icons delete">delete</i>
+                                             </div>
+                                        </td>
+                                      
+                                      </tr>
+                                      <tr>
+                                         <td>The key elements of Forex Trading </td>
+                                         <td>10 Jan 2019</td>
+                                         <td>Admin</td>
+                                         <td><mat-slide-toggle></mat-slide-toggle></td>
+                                         <td>
+                                            <div class="icons">
+                                                <i class="material-icons">edit</i>
+                                                <i class="material-icons delete">delete</i>
+                                             </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                          <td>Want to learn more about currency trading?</td>
+                                          <td>05 Feb 2019</td>
+                                          <td>Admin</td>
+                                          <td><mat-slide-toggle></mat-slide-toggle></td>
+                                          <td>
+                                              <div class="icons">
+                                                  <i class="material-icons">edit</i>
+                                                  <i class="material-icons delete">delete</i>
+                                               </div>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>Powerful trading platforms</td>
+                                          <td>15 Feb 2019</td>
+                                          <td>Admin</td>
+                                          <td><mat-slide-toggle></mat-slide-toggle></td>
+                                          <td>
+                                              <div class="icons">
+                                                  <i class="material-icons">edit</i>
+                                                  <i class="material-icons delete">delete</i>
+                                               </div>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>Leverage our experts</td>
+                                          <td>20 Mar 2019</td>
+                                          <td>Admin</td>
+                                          <td><mat-slide-toggle></mat-slide-toggle></td>
+                                          <td>
+                                              <div class="icons">
+                                                  <i class="material-icons">edit</i>
+                                                  <i class="material-icons delete">delete</i>
+                                               </div>
+                                          </td>
+                                      </tr>
+                                  </tbody>
+    
+                                
+                                </table>
+                                <!-- <mat-paginator  [length]="100"
+                                [pageSize]="10"
+                                [pageSizeOptions]="[5, 10, 25, 100]">
+                                </mat-paginator> -->
+                          </div>
+                        </mat-card>
+                      </mat-tab>
+
+
+            </mat-tab-group>
+      </div>
+  
+    </div>
+     
+  </mat-card>
     
 </div>
 <app-footer></app-footer>

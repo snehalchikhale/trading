@@ -1,9 +1,100 @@
 <app-header></app-header>
 <app-sidebar></app-sidebar>
 <div class="main-content" [ngStyle]="{'margin-left': margin_left + 'px'}">
-  <div class="content">
-      <h2>dashboard</h2>
-  </div>
+    <mat-card class="main-mat-card">
+        <div class="row dashboard_first">
+            <div class="col-md-4">
+            <div class="paid_usersection">
+              <img src="assets/images/total-salesimg.png" alt="total_salesimg.png" >
+            <h4 class="m-0">$4,456.98</h4>
+            <p class="m-0">Total Sales</p>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="user_section">
+              <div class="row">
+                <div class="col-md-5">
+                  <img src="assets/images/user_icon.png" alt="user_icon.png" >
+                </div>
+                <div class="col-md-7">
+                  <h4 class="m-0">1000</h4>
+                  <p class="m-0">Registered User</p>
+                  <h4 class="m-0">2000</h4>
+                  <p class="m-0">Paid User</p>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+                <div class="advertisers_section">
+                  <img src="assets/images/advertisers_icon.png" alt="advertisers_icon.png" >
+                <h4 class="m-0">100</h4>
+                <p class="m-0">Number Of Advertisers</p>
+                </div>
+            </div>            
+            </div>
+            <div class="row dashboard_second">
+                <div class="col-md-4">
+                <div class="paid_usersection">
+                  <img src="assets/images/total-salesimg.png" alt="total_salesimg.png" >
+                <h4 class="m-0">$2,578.12</h4>
+                <p class="m-0">New Sales</p>
+                </div>
+                </div>
+                <div class="col-md-4">
+                <div class="monthly_section">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <img src="assets/images/total-salesimg.png" alt="total_salesimg.png" >
+                    </div>
+                    <div class="col-md-7">
+                      <h4 class="m-0">500</h4>
+                      <p class="m-0">Monthly Sales</p>
+                      <h4 class="m-0">100</h4>
+                      <p class="m-0">Quarterly Sales</p>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="expried_section">
+                      <img src="assets/images/expried_icon.png" alt="expried_icon.png" >
+                    <h4 class="m-0">600</h4>
+                    <p class="m-0">Expired Paid User</p>
+                    </div>
+                </div>            
+                </div>
+
+                <div class="row graph_section">
+                  <div class="col-md-8">
+                    <div class="graph_chartsection">
+                      <div class="graph_secheader">
+                        <h5>Sales Analysis</h5>
+                        <mat-form-field class="today_sales">
+                            <select matNativeControl required>
+                              <option value="volvo">Today's Sales</option>
+                              <option value="saab">Monthly Sales</option>
+                              <option value="mercedes">Weekly Sales</option>
+                            </select>
+                          </mat-form-field>
+                         
+                      </div>
+                      <img src="assets/images/graph_chart.jpg" alt="graph_chart.jpg" >
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="pie_chartsection">
+                      <div class="graph_secheader">
+                        <h5>Member List</h5>
+                      </div>
+                      <img src="assets/images/pie_chart.jpg" alt="pie_chart.jpg" >
+                    </div>
+                  </div>
+                </div>
+  
+            
+
+              </mat-card>
     
 </div>
 <app-footer></app-footer>

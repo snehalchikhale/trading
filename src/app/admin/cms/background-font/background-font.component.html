@@ -1,0 +1,165 @@
+<app-header></app-header>
+<app-sidebar></app-sidebar>
+<div class="main-content" [ngStyle]="{'margin-left': margin_left + 'px'}">
+    <mat-card class="main-mat-card">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="row page-content cms-opt Blog_Pages1">
+                <div class="col-md-12">
+                    <h6 class="Heading"> CMS Options </h6>
+                </div>
+              </div>
+
+            <div class="row  menu_content">
+                <div class="col-md-12 menu1">
+                <ul class="cms_menu">
+                  <li class="active" routerLink="/cms">Menu</li>
+                  <li routerLink="/cms-pages">Pages</li>
+                  <li routerLink="/background-font" >Background and Fonts</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+                     
+                        
+          
+          <div class="col-md-9">
+              <mat-card class="main-mat-card1">
+                    <div class="row page-content1 menu_section background-head Blog_Pages1">
+                          <div class="col-md-6">
+                              <h6 class="Heading mt-3"> Background & Font</h6>
+                          </div>
+                        
+                          <div class="col-md-6 text-right mt-1 ">
+                              <button mat-raised-button class="export save">Save</button>
+                          </div>
+                    </div>
+
+                   <div class="row">
+                     <div class="col-md-10">
+                       <div class="row  background-font mt-4">
+                         <div class="col-md-2">
+                            <h6 class="Heading"> Font Color </h6>
+                        </div>
+                         <div class="col-md-10">
+                            <p><span class="font">Normal</span>
+                              <img src="assets/images/gray_color.png" width="170px"></p>
+  
+                                <p><span class="font">Hover</span>
+                                  <img src="assets/images/red_color.png" width="170px"></p>
+                         </div>
+                       </div>
+                     </div>
+
+                     <div class="col-md-2"></div>
+                   </div>
+
+                   <div class="row">
+                      <div class="col-md-10">
+                        <div class="row  background-font mt-4">
+                          <div class="col-md-2">
+                             <h6 class="Heading">Heading </h6>
+                         </div>
+                          <div class="col-md-10">
+                              <p><span class="font">H1</span>
+                              <img src="assets/images/gray_color.png" width="170px"></p>
+
+                              <p><span class="font">H2</span>
+                              <img src="assets/images/red_color.png" width="170px"></p>
+
+                              <p><span class="font">H3</span>
+                              <img src="assets/images/red_color.png" width="170px"></p>
+
+                              <p><span class="font">H4</span>
+                              <img src="assets/images/red_color.png" width="170px"></p>
+
+                              <p><span class="font">H5</span>
+                              <img src="assets/images/red_color.png" width="170px"></p>    
+                                   
+                          </div>
+                        </div>
+                      </div>
+ 
+                      <div class="col-md-2"></div>
+                    </div>
+                     
+                    
+                   
+                    <div class="Font_color">
+                      <div class="row background-font">
+                      <div class="col-md-2 ">
+                        <h6 class="Heading  mt-3 ">Font Family</h6> 
+                      </div>
+                      <div class="col-md-4 Normal ">
+                        <mat-form-field>
+                          <mat-label>Select Font Family</mat-label>
+                          <mat-select disableRipple>
+                            <mat-option value="1">Arial</mat-option>
+                            <mat-option value="2">Roboto</mat-option>
+                            <mat-option value="3">Montserrat</mat-option>
+                          </mat-select>
+                        </mat-form-field>
+                        
+                      </div>
+                        
+                      <div class="col-md-2">
+                        <h6 class="Heading  mt-3 ">Font-size</h6> 
+                      </div>
+                      <div class="col-md-4">
+                        <mat-form-field>
+                          <mat-label>Font size</mat-label>
+                          <mat-select #fontSize value="16px">
+                            <mat-option value="10px">10px</mat-option>
+                            <mat-option value="12px">12px</mat-option>
+                            <mat-option value="14px">14px</mat-option>
+                            <mat-option value="16px">16px</mat-option>
+                            <mat-option value="18px">18px</mat-option>
+                            <mat-option value="20px">20px</mat-option>
+                          </mat-select>
+                        </mat-form-field>
+                      </div>
+                      </div>
+                  
+                 
+                  </div>
+
+                 <div class="Font_color">
+                    <div class="row background-font">
+                    <div class="col-md-2 ">
+                      <h6 class="Heading  mt-3 ">Background Color</h6> 
+                    </div>
+                    <div class="col-md-4 Normal ">
+                      <mat-form-field>
+                        <mat-label>Background Color</mat-label>
+                        <mat-select disableRipple>
+                          <mat-option value="1">Top Menu</mat-option>
+                          <mat-option value="2">Side Menu</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                      
+                    </div>
+                      
+                    <div class="col-md-4">
+                      <img class="color gray" src="assets/images/red_color.png" width="150px">
+                    </div>
+                    <div class="col-md-2">
+                      
+                    </div>
+                    </div>
+                
+               
+                </div>
+                   
+                   
+                  
+                 
+                    
+              </mat-card>
+          </div>
+            
+        </div>
+       
+    </mat-card> 
+     
+</div>
+<app-footer></app-footer>

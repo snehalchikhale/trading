@@ -1,9 +1,173 @@
 <app-header></app-header>
+
 <app-sidebar></app-sidebar>
 <div class="main-content" [ngStyle]="{'margin-left': margin_left + 'px'}">
-  <div class="content">
-      <h2>adv</h2>
-  </div>
+  <mat-card class="main-mat-card">
+      <div class="row">
+          <div class="col-md-3">
+            <div class="box box1">
+              <h4 class="m-0">$2000</h4>
+              <p class="m-0">Total AD Sales</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+              <div class="box box2">
+                <h4 class="m-0">5000</h4>
+                <p class="m-0">Total SRB Banners</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box box3">
+                  <h4 class="m-0">2000</h4>
+                  <p class="m-0">Total SLB Banners</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="box box4">
+                    <h4 class="m-0">9000</h4>
+                    <p class="m-0">Total TB Banners</p>
+                  </div>
+                </div>
+        </div>
+        <div class="row page-content user-mgnt-tbl">
+          <div class="col-md-12">
+              <div class="row header">
+                  <div class="col-md-4">
+                      <mat-form-field class="example-full-width">
+                          <input matInput placeholder="Filter by Name" >
+                          </mat-form-field>
+                  </div>
+                  
+                  <div class="col-md-8 text-right">
+                      <button class="btn mr-4 mat-raised-button" (click)="addAdv()">Add Advertiser</button>
+                      <button class="mat-raised-button btn" (click)="uploadAd()">Upload AD</button>
+                     
+                  </div>
+                  <div class="col-md-12 text-right">
+                      <span class="alignment-item"><mat-icon class="material-icons green-clr">stop</mat-icon><span class="txt">SRB(Side Right Bar)</span></span>
+                      <span class="alignment-item"><mat-icon class="material-icons pink-clr">stop</mat-icon><span class="txt">SLB(Side Left Bar)</span></span>
+                      <span class="alignment-item"><mat-icon class="material-icons purple-clr">stop</mat-icon><span class="txt">TB(Top Bar)</span></span>
+                    </div>
+              </div> 
+              <table class="table commn-table">
+                  <thead>
+                    <tr>
+                       <th>Sr. No.</th>
+                       <th>Advertiser Name</th>
+                       <th>Company</th>
+                       <th>Duration</th>
+                       <th>Advt. Place</th>
+                       <th>Date (From/To)</th>
+                       <th>Amount</th>
+                       <th>Clicks</th>
+                       <th>Banner</th>
+                       <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>John</td>
+                      <td>Airtel</td>
+                      <td>1 Month</td>
+                      <td >SRB</td>
+                      <td>10-03-2019 to 09-04-2019</td>
+                      <td>$1000</td>
+                      <td>40</td>
+                      <td>3</td>
+                      <td><button mat-button [matMenuTriggerFor]="menu"><i class="material-icons">more_vert</i></button>
+                       <mat-menu #menu="matMenu">
+                          <button mat-menu-item >View</button>
+                          <button mat-menu-item >Edit</button>
+                         <button mat-menu-item>Delete</button>
+                       </mat-menu></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>John</td>
+                        <td>Airtel</td>
+                        <td>1 Month</td>
+                        <td >SRB</td>
+                        <td>10-03-2019 to 09-04-2019</td>
+                        <td>$1000</td>
+                        <td>40</td>
+                        <td>3</td>
+                        <td><button mat-button [matMenuTriggerFor]="menu"><i class="material-icons">more_vert</i></button>
+                         <mat-menu #menu="matMenu">
+                            <button mat-menu-item >View</button>
+                            <button mat-menu-item >Edit</button>
+                           <button mat-menu-item>Delete</button>
+                         </mat-menu></td>
+                      </tr>
+                      <tr>
+                          <td>1</td>
+                          <td>John</td>
+                          <td>Airtel</td>
+                          <td>1 Month</td>
+                          <td >SRB</td>
+                          <td>10-03-2019 to 09-04-2019</td>
+                          <td>$1000</td>
+                          <td>40</td>
+                          <td>3</td>
+                          <td><button mat-button [matMenuTriggerFor]="menu"><i class="material-icons">more_vert</i></button>
+                           <mat-menu #menu="matMenu">
+                              <button mat-menu-item >View</button>
+                              <button mat-menu-item >Edit</button>
+                             <button mat-menu-item>Delete</button>
+                           </mat-menu></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>John</td>
+                            <td>Airtel</td>
+                            <td>1 Month</td>
+                            <td >SRB</td>
+                            <td>10-03-2019 to 09-04-2019</td>
+                            <td>$1000</td>
+                            <td>40</td>
+                            <td>3</td>
+                            <td><button mat-button [matMenuTriggerFor]="menu"><i class="material-icons">more_vert</i></button>
+                             <mat-menu #menu="matMenu">
+                                <button mat-menu-item >View</button>
+                                <button mat-menu-item >Edit</button>
+                               <button mat-menu-item>Delete</button>
+                             </mat-menu></td>
+                          </tr>
+                  </tbody>
+                </table>
+                <ngb-pagination [collectionSize]="70"  aria-label="Default pagination"></ngb-pagination>
+          </div>
+           
+        </div>
+      
+  </mat-card>
+  <!-- <mat-card class="main-mat-card">
+    <div class="row page-content user-mgnt-tbl">
+      <div class="col-md-12">
+          <form class="example-form">
+        <div class="row header">
+            <div class="col-md-3">
+                <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Filter by Name" >
+                    </mat-form-field>
+            </div>
+            <div class="col-md-5 mt-2">
+              <span class="alignment-item" (click)="addAdv()"><mat-icon class="material-icons green-clr">stop</mat-icon><span class="txt">SRB(Side Right Bar)</span></span>
+              <span class="alignment-item"><mat-icon class="material-icons pink-clr">stop</mat-icon><span class="txt">SLB(Side Left Bar)</span></span>
+              <span class="alignment-item"><mat-icon class="material-icons purple-clr">stop</mat-icon><span class="txt">TB(Top Bar)</span></span>
+            </div>
+            <div class="col-md-4 text-right">
+                <button class="btn mr-4" (click)="addAdv()">Add Advertiser</button>
+                <button mat-raised-button class="btn">Save</button>
+                <button class="mat-raised-button btn">Upload AD</button>
+                <button>sdfks;lfkd</button>
+            </div>
+        </div> 
+      </form>
+            <ngb-pagination [collectionSize]="70" [(page)]="page" aria-label="Default pagination"></ngb-pagination>
+            </div>
+          </div>  
+   </mat-card> -->
     
 </div>
 <app-footer></app-footer>

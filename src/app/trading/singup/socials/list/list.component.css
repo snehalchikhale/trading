@@ -1,0 +1,16 @@
+.list-txt img {
+    margin-top: 15px;
+}
+.liked-post div:nth-of-type(odd) {
+    background-color:#fff;
+    }
+        
+.liked-post div:nth-of-type(even) {
+    background-color:#f7f7f7;
+    }
+    .liked-post div {
+        padding: 12px;
+    }
+    .liked-post p{
+        margin-bottom: 0px;
+    }

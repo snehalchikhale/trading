@@ -3,4 +3,5 @@
     background-color: #ddd;
     margin-left: 230px;
     padding-top: 69px;
+    transition: 0.1s all ease;
 }

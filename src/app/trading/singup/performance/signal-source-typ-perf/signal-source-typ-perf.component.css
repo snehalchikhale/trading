@@ -1,0 +1,103 @@
+.heading-Time{
+    background-color: #00969d1f;
+    padding: 15px 10px;
+    border: 1px solid #63b8bd33;
+}
+
+
+
+.candelstick .mat-form-field
+{
+    width: 100px;
+    margin-left: 13px;
+    
+}
+.subheading-input h6 {
+    background: #e9eaea1f;
+    padding: 13px 0px;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    margin: 0px!important;
+}
+.candelstick table thead {
+    background: #e9eaea1f;
+    border-right: 1px solid #ddd;
+}
+
+.input-text {
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 4px 0px;
+}
+
+.input-text p {
+    padding: 8px 0px;
+    margin-bottom: 0px;
+}
+
+
+
+.candelstick mat-radio-button {
+    width: 100px;
+    margin-left: 13px;
+}
+
+.source {
+    width: 24%;
+}
+
+/*new table*/
+.row.option-select {
+    background: #fcfcfc;
+}
+
+
+.tble-head {
+    background: #298ca238;
+    padding: 15px 0px;
+    border: 1px solid #298ca238;
+}
+
+.tble-head1 {
+    background: #e0e0e038;
+    padding: 15px 0px;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.tble-head1.table-tabs {
+    padding: 5.5px 0px!important;
+}
+
+.performance 
+{
+    box-shadow:none !important;
+    border-right: 1px solid #ddd;
+    
+}
+.sec-qtr:nth-child(odd) .performance{
+    background: #f9f9f9
+}
+
+.table-border
+{
+    background: #e0e0e038;
+    border-right: 1px solid #ddd;
+    padding: 6px 0px;
+}
+
+
+.table-responsive {
+    display: block;
+    width: fit-content;
+    overflow-x: auto;
+    height: auto;
+}
+
+.selectn-head
+{
+    width: 133px;
+}

@@ -1,9 +1,399 @@
 <app-header></app-header>
 <app-sidebar></app-sidebar>
 <div class="main-content" [ngStyle]="{'margin-left': margin_left + 'px'}">
-  <div class="content">
-      <h2>cms</h2>
-  </div>
-    
+    <mat-card class="main-mat-card">
+        <div class="row">
+          <div class="col-md-3">
+              <div class="row page-content cms-opt Blog_Pages1">
+                  <div class="col-md-12">
+                      <h6 class="Heading"> CMS Options </h6>
+                  </div>
+                </div>
+
+              <div class="row  menu_content">
+                  <div class="col-md-12 menu1">
+                  <ul class="cms_menu">
+                    <li class="active" routerLink="/cms">Menu</li>
+                    <li routerLink="/cms-pages">Pages</li>
+                    <li routerLink="/background-font" >Background and Fonts</li>
+                  </ul>
+                  </div>
+              </div>
+          </div>
+                     
+                        
+          
+          <div class="col-md-9">
+              <mat-card class="main-mat-card1">
+                      <div class="row page-content1 menu_section Blog_Pages1">
+                          <div class="col-md-3">
+                              <h6 class="Heading mt-3"> Select menu to edit</h6>
+                          </div>
+                          <div class="col-md-6">
+                              <mat-form-field class="Header Menu mr-4">
+                                  <select matNativeControl >
+                                    <option value="Header Menu">Header Menu</option>
+                                    <option value="Signed-up Nav">Signed-up Nav</option>
+                                   </select>
+                                </mat-form-field>
+                                <button mat-raised-button class="select">Select</button>
+                           </div>
+                          <!-- <div class="col-md-2 mt-1 ">
+                              <button mat-raised-button class="select">Select</button>
+                          </div> -->
+                          <div class="col-md-3 mt-1 text-right ">
+                              <button mat-raised-button class="export">Save Menu</button>
+                          </div>
+                        </div>
+        
+                      <div class="row">
+                        <div class="col-md-12 content1 ">
+                          <span>Drag each menu into the order you prefer. Click the arrow on the right of menu to reveal additional options.</span>
+                        </div>
+                    </div>
+
+                    <div class="row  menu_content1">
+                            <div class="col-md-6 "> 
+                                <mat-expansion-panel class="dropdoen_section">
+                                    <mat-expansion-panel-header class="calcsection_header">
+                                      <mat-panel-title>
+                                        Calculators
+                                      </mat-panel-title>
+                                      <mat-panel-description class="headermenu_page">
+                                        Page
+                                      </mat-panel-description>
+                                    </mat-expansion-panel-header>
+                                        <h6 class="navi_label">navigation Label</h6>
+                                    <mat-form-field class="calculator_section">
+                                      <input matInput placeholder="Calculators">
+                                    </mat-form-field>
+                                    <a href=""><button>Save</button></a>
+                                    <a href=""><button class="delete_btn">Delete</button></a>
+                                </mat-expansion-panel>
+                                
+                            </div>
+                        </div>
+                    <div class="row  menu_content1">
+                                <div class="col-md-6 "> 
+                                    <mat-expansion-panel class="dropdoen_section">
+                                        <mat-expansion-panel-header class="calcsection_header">
+                                          <mat-panel-title>
+                                            Charts
+                                          </mat-panel-title>
+                                          <mat-panel-description class="headermenu_page">
+                                            Page
+                                          </mat-panel-description>
+                                        </mat-expansion-panel-header>
+                                            <h6 class="navi_label">navigation Label</h6>
+                                        <mat-form-field class="calculator_section">
+                                          <input matInput placeholder="Calculators">
+                                        </mat-form-field>
+                                        <a href=""><button>Save</button></a>
+                                        <a href=""><button class="delete_btn">Delete</button></a>
+                                    </mat-expansion-panel>
+                                    
+                                </div>
+                        </div>
+                    <div class="row  menu_content1">
+                                    <div class="col-md-6 "> 
+                                        <mat-expansion-panel class="dropdoen_section">
+                                            <mat-expansion-panel-header class="calcsection_header">
+                                              <mat-panel-title>
+                                                Technical Analysis
+                                              </mat-panel-title>
+                                              <mat-panel-description class="headermenu_page">
+                                                Page
+                                              </mat-panel-description>
+                                            </mat-expansion-panel-header>
+                                                <h6 class="navi_label">navigation Label</h6>
+                                            <mat-form-field class="calculator_section">
+                                              <input matInput placeholder="Calculators">
+                                            </mat-form-field>
+                                            <a href=""><button>Save</button></a>
+                                            <a href=""><button class="delete_btn">Delete</button></a>
+                                        </mat-expansion-panel>
+                                        
+                                    </div>
+                        </div>
+                    <div class="row  menu_content1">
+                                        <div class="col-md-6 "> 
+                                            <mat-expansion-panel class="dropdoen_section">
+                                                <mat-expansion-panel-header class="calcsection_header">
+                                                  <mat-panel-title>
+                                                    Economical Calendar
+                                                  </mat-panel-title>
+                                                  <mat-panel-description class="headermenu_page">
+                                                    Page
+                                                  </mat-panel-description>
+                                                </mat-expansion-panel-header>
+                                                    <h6 class="navi_label">navigation Label</h6>
+                                                <mat-form-field class="calculator_section">
+                                                  <input matInput placeholder="Calculators">
+                                                </mat-form-field>
+                                                <a href=""><button>Save</button></a>
+                                                <a href=""><button class="delete_btn">Delete</button></a>
+                                            </mat-expansion-panel>
+                                            
+                                        </div>
+                        </div>
+                    <div class="row  menu_content1">
+                                            <div class="col-md-6 "> 
+                                                <mat-expansion-panel class="dropdoen_section">
+                                                    <mat-expansion-panel-header class="calcsection_header">
+                                                      <mat-panel-title>
+                                                        Top Performers
+                                                      </mat-panel-title>
+                                                      <mat-panel-description class="headermenu_page">
+                                                        Page
+                                                      </mat-panel-description>
+                                                    </mat-expansion-panel-header>
+                                                        <h6 class="navi_label">navigation Label</h6>
+                                                    <mat-form-field class="calculator_section">
+                                                      <input matInput placeholder="Calculators">
+                                                    </mat-form-field>
+                                                    <a href=""><button>Save</button></a>
+                                                    <a href=""><button class="delete_btn">Delete</button></a>
+                                                </mat-expansion-panel>
+                                                
+                                            </div>
+                        </div>
+                    <div class="row  menu_content1">
+                                                <div class="col-md-6 "> 
+                                                    <mat-expansion-panel class="dropdoen_section">
+                                                        <mat-expansion-panel-header class="calcsection_header">
+                                                          <mat-panel-title>
+                                                            Chat
+                                                          </mat-panel-title>
+                                                          <mat-panel-description class="headermenu_page">
+                                                            Page
+                                                          </mat-panel-description>
+                                                        </mat-expansion-panel-header>
+                                                            <h6 class="navi_label">navigation Label</h6>
+                                                        <mat-form-field class="calculator_section">
+                                                          <input matInput placeholder="Calculators">
+                                                        </mat-form-field>
+                                                        <a href=""><button>Save</button></a>
+                                                        <a href=""><button class="delete_btn">Delete</button></a>
+                                                    </mat-expansion-panel>
+                                                    
+                                                </div>
+                        </div>
+                    <div class="row  menu_content1">
+                                                    <div class="col-md-6 "> 
+                                                        <mat-expansion-panel class="dropdoen_section">
+                                                            <mat-expansion-panel-header class="calcsection_header">
+                                                              <mat-panel-title>
+                                                                Blog
+                                                              </mat-panel-title>
+                                                              <mat-panel-description class="headermenu_page">
+                                                                Page
+                                                              </mat-panel-description>
+                                                            </mat-expansion-panel-header>
+                                                                <h6 class="navi_label">navigation Label</h6>
+                                                            <mat-form-field class="calculator_section">
+                                                              <input matInput placeholder="Calculators">
+                                                            </mat-form-field>
+                                                            <a href=""><button>Save</button></a>
+                                                            <a href=""><button class="delete_btn">Delete</button></a>
+                                                        </mat-expansion-panel>
+                                                        
+                                                    </div>
+                        </div>
+                    <div class="row  menu_content1">
+                                                        <div class="col-md-6 "> 
+                                                            <mat-expansion-panel class="dropdoen_section">
+                                                                <mat-expansion-panel-header class="calcsection_header">
+                                                                  <mat-panel-title>
+                                                                        Article
+                                                                  </mat-panel-title>
+                                                                  <mat-panel-description class="headermenu_page">
+                                                                    Page
+                                                                  </mat-panel-description>
+                                                                </mat-expansion-panel-header>
+                                                                    <h6 class="navi_label">navigation Label</h6>
+                                                                <mat-form-field class="calculator_section">
+                                                                  <input matInput placeholder="Calculators">
+                                                                </mat-form-field>
+                                                                <a href=""><button>Save</button></a>
+                                                                <a href=""><button class="delete_btn">Delete</button></a>
+                                                            </mat-expansion-panel>
+                                                            
+                                                        </div>
+                        </div>
+                    <div class="row  menu_content1">
+                                                            <div class="col-md-6 "> 
+                                                                <mat-expansion-panel class="dropdoen_section">
+                                                                    <mat-expansion-panel-header class="calcsection_header">
+                                                                      <mat-panel-title>
+                                                                        News
+                                                                      </mat-panel-title>
+                                                                      <mat-panel-description class="headermenu_page">
+                                                                        Page
+                                                                      </mat-panel-description>
+                                                                    </mat-expansion-panel-header>
+                                                                        <h6 class="navi_label">navigation Label</h6>
+                                                                    <mat-form-field class="calculator_section">
+                                                                      <input matInput placeholder="Calculators">
+                                                                    </mat-form-field>
+                                                                    <a href=""><button>Save</button></a>
+                                                                    <a href=""><button class="delete_btn">Delete</button></a>
+                                                                </mat-expansion-panel>
+                                                                
+                                                            </div>
+                        </div>
+                    <div class="row  menu_content1">
+                                                                <div class="col-md-6 "> 
+                                                                    <mat-expansion-panel class="dropdoen_section">
+                                                                        <mat-expansion-panel-header class="calcsection_header">
+                                                                          <mat-panel-title>
+                                                                            Alerts
+                                                                          </mat-panel-title>
+                                                                          <mat-panel-description class="headermenu_page">
+                                                                            Page
+                                                                          </mat-panel-description>
+                                                                        </mat-expansion-panel-header>
+                                                                            <h6 class="navi_label">navigation Label</h6>
+                                                                        <mat-form-field class="calculator_section">
+                                                                          <input matInput placeholder="Calculators">
+                                                                        </mat-form-field>
+                                                                        <a href=""><button>Save</button></a>
+                                                                        <a href=""><button class="delete_btn">Delete</button></a>
+                                                                    </mat-expansion-panel>
+                                                                    
+                                                                </div>
+                        </div>
+                        <div class="signup_navsection">
+                            <div class="row  menu_content1">
+                                        <div class="col-md-6 "> 
+                                            <mat-expansion-panel class="dropdoen_section">
+                                                <mat-expansion-panel-header class="calcsection_header">
+                                                  <mat-panel-title>
+                                                        Fabonacci calculator
+                                                  </mat-panel-title>
+                                                  <mat-panel-description class="headermenu_page">
+                                                    Page
+                                                  </mat-panel-description>
+                                                </mat-expansion-panel-header>
+                                                    <h6 class="navi_label">navigation Label</h6>
+                                                <mat-form-field class="calculator_section">
+                                                  <input matInput placeholder="Calculators">
+                                                </mat-form-field>
+                                                <a href=""><button>Save</button></a>
+                                                <a href=""><button class="delete_btn">Delete</button></a>
+                                            </mat-expansion-panel>
+                                            
+                                        </div>
+                            </div>
+                            <div class="row  menu_content1">
+                                            <div class="col-md-6 "> 
+                                                <mat-expansion-panel class="dropdoen_section">
+                                                    <mat-expansion-panel-header class="calcsection_header">
+                                                      <mat-panel-title>
+                                                        Margin calculator
+                                                      </mat-panel-title>
+                                                      <mat-panel-description class="headermenu_page">
+                                                        Page
+                                                      </mat-panel-description>
+                                                    </mat-expansion-panel-header>
+                                                        <h6 class="navi_label">navigation Label</h6>
+                                                    <mat-form-field class="calculator_section">
+                                                      <input matInput placeholder="Calculators">
+                                                    </mat-form-field>
+                                                    <a href=""><button>Save</button></a>
+                                                    <a href=""><button class="delete_btn">Delete</button></a>
+                                                </mat-expansion-panel>
+                                                
+                                            </div>
+                            </div>
+                            <div class="row  menu_content1">
+                                                <div class="col-md-6 "> 
+                                                    <mat-expansion-panel class="dropdoen_section">
+                                                        <mat-expansion-panel-header class="calcsection_header">
+                                                          <mat-panel-title>
+                                                            PIP calculator
+                                                          </mat-panel-title>
+                                                          <mat-panel-description class="headermenu_page">
+                                                            Page
+                                                          </mat-panel-description>
+                                                        </mat-expansion-panel-header>
+                                                            <h6 class="navi_label">navigation Label</h6>
+                                                        <mat-form-field class="calculator_section">
+                                                          <input matInput placeholder="Calculators">
+                                                        </mat-form-field>
+                                                        <a href=""><button>Save</button></a>
+                                                        <a href=""><button class="delete_btn">Delete</button></a>
+                                                    </mat-expansion-panel>
+                                                    
+                                                </div>
+                            </div>
+                            <div class="row  menu_content1">
+                                                    <div class="col-md-6 "> 
+                                                        <mat-expansion-panel class="dropdoen_section">
+                                                            <mat-expansion-panel-header class="calcsection_header">
+                                                              <mat-panel-title>
+                                                                    Profit Calculator
+                                                              </mat-panel-title>
+                                                              <mat-panel-description class="headermenu_page">
+                                                                Page
+                                                              </mat-panel-description>
+                                                            </mat-expansion-panel-header>
+                                                                <h6 class="navi_label">navigation Label</h6>
+                                                            <mat-form-field class="calculator_section">
+                                                              <input matInput placeholder="Calculators">
+                                                            </mat-form-field>
+                                                            <a href=""><button>Save</button></a>
+                                                            <a href=""><button class="delete_btn">Delete</button></a>
+                                                        </mat-expansion-panel>
+                                                        
+                                                    </div>
+                            </div>
+                            <div class="row  menu_content1">
+                                                        <div class="col-md-6 "> 
+                                                            <mat-expansion-panel class="dropdoen_section">
+                                                                <mat-expansion-panel-header class="calcsection_header">
+                                                                  <mat-panel-title>
+                                                                        Technical Analysis
+                                                                  </mat-panel-title>
+                                                                  <mat-panel-description class="headermenu_page">
+                                                                    Page
+                                                                  </mat-panel-description>
+                                                                </mat-expansion-panel-header>
+                                                                    <h6 class="navi_label">navigation Label</h6>
+                                                                <mat-form-field class="calculator_section">
+                                                                  <input matInput placeholder="Calculators">
+                                                                </mat-form-field>
+                                                                <a href=""><button>Save</button></a>
+                                                                <a href=""><button class="delete_btn">Delete</button></a>
+                                                            </mat-expansion-panel>
+                                                            
+                                                        </div>
+                            </div>
+                            <div class="row  menu_content1">
+                                                            <div class="col-md-6 "> 
+                                                                <mat-expansion-panel class="dropdoen_section">
+                                                                    <mat-expansion-panel-header class="calcsection_header">
+                                                                      <mat-panel-title>
+                                                                            Moving Averages
+                                                                      </mat-panel-title>
+                                                                      <mat-panel-description class="headermenu_page">
+                                                                        Page
+                                                                      </mat-panel-description>
+                                                                    </mat-expansion-panel-header>
+                                                                        <h6 class="navi_label">navigation Label</h6>
+                                                                    <mat-form-field class="calculator_section">
+                                                                      <input matInput placeholder="Calculators">
+                                                                    </mat-form-field>
+                                                                    <a href=""><button>Save</button></a>
+                                                                    <a href=""><button class="delete_btn">Delete</button></a>
+                                                                </mat-expansion-panel>
+                                                                
+                                                            </div>
+                            </div>
+                        </div>
+              </mat-card>
+            
+          </div>
+        </div>
+        </mat-card>  
 </div>
 <app-footer></app-footer>

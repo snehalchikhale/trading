@@ -1,0 +1,330 @@
+
+<app-header-trading></app-header-trading>
+<app-submenubar></app-submenubar>
+<app-topadv></app-topadv>
+<div class="main-page-content">
+            <div class="container-fluid">
+                   <div class="row">
+                        <div class="left-side col-md-2">
+                                <div class="adv-left-image text-left">
+                                        <p><img src="assets/images/left-adv.png"></p>
+                                      </div>
+                        </div>
+                        <div class="middle-content col-md-8">
+                         <div class="row">
+                         <div class="col-md-12">
+                           <h5 class="sub-title mb-4">Socials</h5>
+                           <mat-tab-group>
+
+                                  <mat-tab label="Investment">
+                                    <mat-card>
+                                    <div class="investment">
+                                        <div class="row">
+                                            <div class="col-md-12 mt-4">
+                                                 <mat-card>
+                                                 <h6>Investment</h6>
+                                                 <img src="assets/images/investment-graph.png" width="100%">
+                                               </mat-card>
+                                            </div>
+                                            <div class="col-md-12 mt-4">
+                                                 <mat-card>
+                                                   <div class="row">
+                                                      <div class="col-md-4">
+                                                          <h6>Long</h6>
+                                                      </div>
+                                                      <div class="col-md-8 text-right">
+                                                      <span class="mr-2"><button mat-raised-button class="long-short" >Long</button></span>
+                                                      <span><button mat-raised-button class="long-short" >Short</button> </span>
+                                                      </div>
+                                                      <!-- <div class="col-md-3">
+                                                          <button mat-raised-button class="long-short" >Long</button>
+                                                      </div>
+                                                      <div class="col-md-3">
+                                                          <button mat-raised-button class="long-short" >Short</button> 
+                                                      </div>   -->
+                                                   </div>
+                                                   <div class="row">
+                                                   <div class="col-md-12">
+                                                      <img src="assets/images/investment-graph1.png"  class="mt-2" width="100%">
+                                                   </div>
+                                                   </div>
+                                               </mat-card>
+                                             </div>
+                                          </div>
+                                    </div>
+                                  </mat-card>
+                                  </mat-tab>
+
+
+                                  <mat-tab label="Trades">
+                                      <mat-card>
+                                          <div class="Trades">
+                                              <div class="row">
+                                                  <div class="col-md-6 mt-4">
+                                                      <h6>Trades</h6>
+                                                  </div>
+                                                  <div class="col-md-6 mt-4 text-right">
+                                                    <span class="mr-4"><button mat-raised-button class="long-short" >Long</button></span>
+                                                    <span><button mat-raised-button class="long-short" >Short</button> </span>
+                                                      </div>
+                                                      
+                                              </div>
+                                          
+                                              <div class="row">
+                                                  <div class="col-md-12 mt-4">
+                                                       <mat-card>
+                                                      
+                                                       <img src="assets/images/no. of emos.png" width="100%">
+                                                     </mat-card>
+                                                  </div>
+                                                  
+                                              </div>
+                                          </div>
+                                          <div class="Trades1">
+                                              <div class="row">
+                                                
+                                                  <div class="col-md-5 mt-4">
+                                                      <h6>No. of Winning and Loss Trade</h6>
+                                                  </div>
+
+                                                  <div class="col-md-5 mt-4 text-right">
+                                                    <span class="mr-4"><button mat-raised-button class="long-short" >Long</button></span>
+                                                    <span><button mat-raised-button class="long-short" >Short</button> </span>
+                                                  </div>
+
+                                                  <div class="col-md-2  mt-4 text-right">    
+                                                    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                                                        <mat-icon>more_vert</mat-icon>
+                                                        </button>
+                                                        <mat-menu #menu="matMenu">
+                                                            <button mat-menu-item>
+                                                            <span>No. of Days</span>
+                                                            </button>
+                                                            <button mat-menu-item>
+                                                              <span>Average Trades</span>
+                                                            </button>
+                                                            <button mat-menu-item>
+                                                             <span>Ratio Avearge Trades</span>
+                                                            </button>
+                                                            <button mat-menu-item>
+                                                              <span>Largest Trades</span>
+                                                            </button>
+                                                            <button mat-menu-item>
+                                                            <span>Percentage of Trades</span>
+                                                            </button>
+                                                      </mat-menu>
+                                                  </div>      
+                                              </div>
+                                          
+                                              <div class="row">
+                                                  <div class="col-md-12 mt-4">
+                                                       <mat-card>
+                                                      <img src="assets/images/tradegraph.png" width="100%">
+                                                     </mat-card>
+                                                  </div>
+                                                  
+                                              </div>
+                                          </div>
+                                        </mat-card>
+                                  </mat-tab>
+
+                                  <mat-tab label="Profit & Loss">
+                                      <mat-card>
+                                        <div class="profit-loss">
+                                          <div class="row">
+                                            <div class="col-md-12 mt-4">
+                                            <mat-card>
+                                            <div class="row">
+                                            <div class="col-md-6">
+                                              <h6 class="mt-2">Highest</h6>
+                                            </div>
+                                            <div class="col-md-6 text-right">
+                                                            <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                                                            <mat-icon>more_vert</mat-icon>
+                                                            </button>
+                                                            <mat-menu #menu="matMenu">
+                                                                <button mat-menu-item>
+                                                                 <span>Highest</span>
+                                                                </button>
+                                                                <button mat-menu-item>
+                                                                  <span>Lowest</span>
+                                                                </button>
+                                                                <button mat-menu-item>
+                                                                 <span>Avearge</span>
+                                                                </button>
+                                                                <button mat-menu-item>
+                                                                  <span>% of PIP'S</span>
+                                                                </button>
+                                                                <button mat-menu-item>
+                                                                <span>Return of Loss</span>
+                                                                </button>
+                                                              </mat-menu>
+                                            </div>
+                                          </div>
+                                        <div class="row">
+                                        <div class="col-md-12">
+                                                          <img src="assets/images/investment-graph.png" width="100%">
+                                        </div>
+                                        </div>
+                                      </mat-card>
+                                      </div>
+                                    <div class="col-md-12 mt-4">
+                                  <mat-card>
+                                <div class="row">
+                                  <div class="col-md-4">
+                                    <h6 class="mt-2">Long</h6>
+                                  </div>
+                                  <div class="col-md-3">
+                                    <button mat-raised-button class="long-short" >Long</button>
+                                  </div>
+                                  <div class="col-md-3">
+                                  <button mat-raised-button class="long-short" >Short</button> 
+                                   </div>
+                                  <div class="col-md-2 text-right">
+                                                                    
+                                      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                                      <mat-icon>more_vert</mat-icon>
+                                      </button>
+                                      <mat-menu #menu="matMenu">
+                                     <button mat-menu-item>
+                                      <span>Highest</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                      <span>Lowest</span>
+                                      </button>
+                                     <button mat-menu-item>
+                                      <span>Avearge</span>
+                                       </button>
+                                        <button mat-menu-item>
+                                       <span>% of PIP'S</span>
+                                      </button>
+                                     <button mat-menu-item>
+                                    <span>Return of Loss</span>
+                                    </button>
+                                    </mat-menu>
+                                    </div>  
+                                      </div>
+                                                             <div class="row">
+                                                             <div class="col-md-12">
+                                                                <img src="assets/images/investment-graph1.png"  class="mt-2" width="100%">
+                                                             </div>
+                                                             </div>
+                                                         </mat-card>
+                                                       </div>
+                                                    </div>
+                                              </div>
+                                            </mat-card>
+                                  </mat-tab>
+
+
+                                  <mat-tab label="PIP'S">
+                                      <mat-card>
+                                          <div class="PIP'S">
+                                              <div class="row">
+                                                  <div class="col-md-6 mt-4">
+                                                      <h6>PIP'S</h6>
+                                                  </div>
+                                                  <div class="col-md-6 mt-4 text-right">
+                                                    <span class="mr-4"><button mat-raised-button class="long-short" >Long</button></span>
+                                                    <span><button mat-raised-button class="long-short" >Short</button> </span>
+                                                      </div>
+                                                      
+                                              </div>
+                                          
+                                              <div class="row">
+                                                  <div class="col-md-12 mt-4">
+                                                       <mat-card>
+                                                      
+                                                       <img src="assets/images/no. of emos.png" width="100%">
+                                                     </mat-card>
+                                                  </div>
+                                                  
+                                              </div>
+                                          </div>
+                                     
+                                        </mat-card>
+                                  </mat-tab>
+
+
+                                  <mat-tab label="Constructive">
+                                    <mat-card>
+                                      <div class="Constructive">
+                                          <div class="row">
+                                              <div class="col-md-12 mt-4">
+                                                <mat-card>
+                                                  <h6>Constructive</h6>
+                                                       <img src="assets/images/investment-graph.png" width="100%">
+                                                     </mat-card>
+                                                  </div>
+                                                  <div class="col-md-12 mt-4">
+                                                       <mat-card>
+                                                          <div class="row">
+                                                              <div class="col-md-4">
+                                                                  <h6 class="mt-2">Long</h6>
+                                                              </div>
+                                                              <div class="col-md-8 text-right">
+                                                              <span class="mr-2"><button mat-raised-button class="long-short" >Long</button></span>
+                                                              <span><button mat-raised-button class="long-short" >Short</button> </span>
+                                                              </div>
+                                                           </div>
+                                                         <div class="row">
+                                                         <div class="col-md-12">
+                                                            <img src="assets/images/investment-graph1.png"  class="mt-2" width="100%">
+                                                         </div>
+                                                         </div>
+                                                     </mat-card>
+                                                   </div>
+                                                </div>
+                                          </div>
+                                    </mat-card>
+                                  </mat-tab>
+                                  
+                                     
+                                  <mat-tab label="No. of Emo">
+                                    <mat-card>
+                                          <div class="No. of Emo">
+                                              <div class="row">
+                                                  <div class="col-md-6 mt-4">
+                                                      <h6>No. of Emo</h6>
+                                                  </div>
+                                                  <div class="col-md-6 mt-4 text-right">
+                                                    <span class="mr-4"><button mat-raised-button class="long-short" >Long</button></span>
+                                                    <span><button mat-raised-button class="long-short" >Short</button> </span>
+                                                      </div>
+                                                      
+                                              </div>
+                                          
+                                              <div class="row">
+                                                  <div class="col-md-12 mt-4">
+                                                       <mat-card>
+                                                      
+                                                       <img src="assets/images/no. of emos.png" width="100%">
+                                                     </mat-card>
+                                                  </div>
+                                                  
+                                              </div>
+                                          </div>
+                                     
+                                    </mat-card>
+                                  </mat-tab>
+
+
+                                </mat-tab-group>
+                           </div>
+                         </div>
+
+                        
+                        </div>  
+                        <div class="right-side col-md-2 text-right">
+                                <div class="adv-right-image">
+                                        <p><img src="assets/images/right-adv.png"></p>
+                                </div>
+                        </div>
+                   </div>
+                </div>
+
+        
+</div>
+
+
+<app-footer-trading></app-footer-trading>

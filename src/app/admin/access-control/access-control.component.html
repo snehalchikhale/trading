@@ -1,9 +1,194 @@
 <app-header></app-header>
 <app-sidebar></app-sidebar>
 <div class="main-content" [ngStyle]="{'margin-left': margin_left + 'px'}">
-  <div class="content">
-      <h2>access control</h2>
-  </div>
+  <mat-card class="main-mat-card">
+    <div class="row page-content">
+      <div class="col-md-12">
+          <mat-tab-group >
+              <mat-tab label="All Users">
+              <div class="all-users">
+                
+               <table class="table commn-table">
+                 <thead>
+                   <tr>
+                      <th><mat-checkbox></mat-checkbox></th>
+                      <th>Sr. No.</th>
+                      <th>Users Name</th>
+                      <th>Email</th>
+                      <th>Role</th>
+                      <th>Status</th>
+                      <th>Action</th>
+                   </tr>
+                 </thead>
+                 <tbody>
+                   <tr>
+                     <td><mat-checkbox></mat-checkbox></td>
+                     <td>1.</td>
+                     <td>John</td>
+                     <td>testing@gmail.com</td>
+                     <td >Admin</td>
+                     <td class="status-active">Active</td>
+                     <td><button mat-button [matMenuTriggerFor]="menu"><i class="material-icons">more_vert</i></button>
+                      <mat-menu #menu="matMenu">
+                        <button mat-menu-item routerLink="/new-role">Edit</button>
+                        <button mat-menu-item>Delete</button>
+                      </mat-menu></td>
+                   </tr>
+                   <tr>
+                      <td><mat-checkbox></mat-checkbox></td>
+                      <td>2.</td>
+                      <td>John</td>
+                      <td>testing@gmail.com</td>
+                      <td>Admin</td>
+                      <td class="status-active">Active</td>
+                      <td><button mat-button [matMenuTriggerFor]="menu"><i class="material-icons">more_vert</i></button>
+                       <mat-menu #menu="matMenu">
+                         <button mat-menu-item routerLink="/new-role">Edit</button>
+                         <button mat-menu-item>Delete</button>
+                       </mat-menu></td>
+                    </tr>
+                    <tr>
+                        <td><mat-checkbox></mat-checkbox></td>
+                        <td>3.</td>
+                        <td>John</td>
+                        <td>testing@gmail.com</td>
+                        <td>Admin</td>
+                        <td class="status-inactive">Inactive</td>
+                        <td><button mat-button [matMenuTriggerFor]="menu"><i class="material-icons">more_vert</i></button>
+                         <mat-menu #menu="matMenu">
+                           <button mat-menu-item routerLink="/new-role">Edit</button>
+                           <button mat-menu-item>Delete</button>
+                         </mat-menu></td>
+                      </tr>
+                      <tr>
+                          <td><mat-checkbox></mat-checkbox></td>
+                          <td>4.</td>
+                          <td>John</td>
+                          <td>testing@gmail.com</td>
+                          <td>Limited Access </td>
+                          <td class="status-active">Active</td>
+                          <td><button mat-button [matMenuTriggerFor]="menu"><i class="material-icons">more_vert</i></button>
+                           <mat-menu #menu="matMenu">
+                             <button mat-menu-item routerLink="/new-role">Edit</button>
+                             <button mat-menu-item>Delete</button>
+                           </mat-menu></td>
+                        </tr>
+                        <tr>
+                            <td><mat-checkbox></mat-checkbox></td>
+                            <td>5.</td>
+                            <td>John</td>
+                            <td>testing@gmail.com</td>
+                            <td>Project Management
+                              </td>
+                            <td class="status-active">Active</td>
+                            <td><button mat-button [matMenuTriggerFor]="menu"><i class="material-icons">more_vert</i></button>
+                             <mat-menu #menu="matMenu">
+                               <button mat-menu-item routerLink="/new-role">Edit</button>
+                               <button mat-menu-item>Delete</button>
+                             </mat-menu></td>
+                          </tr>
+                          <tr>
+                              <td><mat-checkbox></mat-checkbox></td>
+                              <td>6.</td>
+                              <td>John</td>
+                              <td>testing@gmail.com</td>
+                              <td>Admin</td>
+                              <td class="status-inactive">Inactive</td>
+                              <td><button mat-button [matMenuTriggerFor]="menu"><i class="material-icons">more_vert</i></button>
+                               <mat-menu #menu="matMenu">
+                                 <button mat-menu-item routerLink="/new-role">Edit</button>
+                                 <button mat-menu-item>Delete</button>
+                               </mat-menu></td>
+                            </tr>
+                 </tbody>
+               </table>
+              </div>
+          </mat-tab>
+              <mat-tab label="Roles">
+                  <div class="roles-content">
+                      <p class="ml-2"><button mat-raised-button class="btn" routerLink="/new-role">New Role</button></p>
+                      <table class="table commn-table">
+                          <thead>
+                            <tr>
+                               <th><mat-checkbox></mat-checkbox></th>
+                               <th>Sr. No.</th>
+                               <th>Role Name</th>
+                               <th>Description</th>
+                               <th>Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td><mat-checkbox></mat-checkbox></td>
+                              <td>1.</td>
+                              <td >Admin</td>
+                              <td>This is admin</td>
+                              <td><button mat-button [matMenuTriggerFor]="menu"><i class="material-icons">more_vert</i></button>
+                               <mat-menu #menu="matMenu">
+                                 <button mat-menu-item routerLink="/new-role">Edit</button>
+                                 <button mat-menu-item>Delete</button>
+                               </mat-menu></td>
+                            </tr>
+                            <tr>
+                                <td><mat-checkbox></mat-checkbox></td>
+                                <td>2.</td>
+                                <td >Admin</td>
+                                <td>This is admin</td>
+                                <td><button mat-button [matMenuTriggerFor]="menu"><i class="material-icons">more_vert</i></button>
+                                 <mat-menu #menu="matMenu">
+                                   <button mat-menu-item routerLink="/new-role">Edit</button>
+                                   <button mat-menu-item>Delete</button>
+                                 </mat-menu></td>
+                              </tr>
+                              <tr>
+                                  <td><mat-checkbox></mat-checkbox></td>
+                                  <td>3.</td>
+                                  <td >Admin</td>
+                                  <td>This is admin</td>
+                                  <td><button mat-button [matMenuTriggerFor]="menu"><i class="material-icons">more_vert</i></button>
+                                   <mat-menu #menu="matMenu">
+                                     <button mat-menu-item routerLink="/new-role">Edit</button>
+                                     <button mat-menu-item>Delete</button>
+                                   </mat-menu></td>
+                                </tr>
+                                <tr>
+                                    <td><mat-checkbox></mat-checkbox></td>
+                                    <td>4.</td>
+                                    <td >Admin</td>
+                                    <td>This is admin</td>
+                                    <td><button mat-button [matMenuTriggerFor]="menu"><i class="material-icons">more_vert</i></button>
+                                     <mat-menu #menu="matMenu">
+                                       <button mat-menu-item routerLink="/new-role">Edit</button>
+                                       <button mat-menu-item>Delete</button>
+                                     </mat-menu></td>
+                                  </tr>
+                          </tbody>
+                        </table>
+                  </div>
+              </mat-tab>
+            </mat-tab-group>
+      </div>
+  
+    </div>
+      <!-- <div class="row">
+          <div class="col-md-12 page-content">
+           <mat-tab-group >
+             <mat-tab label="All Users"> Content 1 </mat-tab>
+             <mat-tab label="Roles"> Content 2 </mat-tab>
+           </mat-tab-group>
+          </div>
+        </div> -->
+  </mat-card>
+  <!-- <div class="row content">
+     <div class="row">
+       <div class="col-md-12 page-content">
+        <mat-tab-group >
+          <mat-tab label="All Users"> Content 1 </mat-tab>
+          <mat-tab label="Roles"> Content 2 </mat-tab>
+        </mat-tab-group>
+       </div>
+     </div>
+  </div> -->
     
 </div>
 <app-footer></app-footer>

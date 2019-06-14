@@ -1,0 +1,92 @@
+.like-i {
+    color: #056cff;
+}
+.dislike-i {
+    color: #cd5f0f;
+}
+.comment-i{
+    color:#c19b16 ;
+}
+.add-i{
+    color: #2da51a;
+}
+.options .mat-icon {
+    margin-right: 15px;
+    cursor: pointer;
+}
+.blog-details h3 {
+    color: #176eca;
+    font-size: 28px;
+}
+.blog-details h6 {
+    color: #a09c9c;
+    font-size: 13px;
+    font-weight: 100;
+}
+.blog-details p {
+    color: #8e8e8e;
+    font-size: 14px;
+}
+.blog {
+    box-shadow: 0px 0px 10px #ddddddb3;
+    padding: 20px 10px;
+}
+.blog-img img {
+    box-shadow: 0px 0px 10px #ddd;
+}
+
+.sec-list .mat-icon{
+ width: 45px;
+ height: 45px;
+}
+.sec-list .mat-icon img.avtar{
+    border-radius: 100px;
+    width: 45px;
+}
+.list-info{
+    display: flex;
+}
+.list-info p{
+    margin: 0;
+    margin: 0;
+    align-items: center;
+    display: flex;
+    color: #939292;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.list-info p i.material-icons{
+    font-size: 18px
+}
+.btn-d{
+    min-width: auto
+}
+.bdr-rad15{
+    border-radius: 15px;
+    line-height: 30px
+}
+.blue-bg{
+    background: #1256a0;
+    color: #fff;
+
+}
+
+.blue-bg1 {
+    border: 2px solid #1256A0;
+    color: #1256A0;
+}
+.blue-bg:hover {
+    background-color: #259c15 !important;
+}
+.blue-bg1:hover {
+    background-color: #1256A0;
+    color: #fff;
+}
+.personal-profile {
+    text-align: center;
+}
+
+img.pro-img1 {
+    border-radius: 100px;
+    width: 67px;
+}

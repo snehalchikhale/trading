@@ -17,7 +17,7 @@ export class DashboardComponent{
     this.shared.aToggleEvent.subscribe((data:string) => {
       console.log('check', data);
       if(data=='Ok'){
-        this.margin_left=60;
+        this.margin_left=75;
       }else{
         this.margin_left = 230;
       }

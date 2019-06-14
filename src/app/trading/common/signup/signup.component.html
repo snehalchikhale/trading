@@ -1,0 +1,106 @@
+<app-header-trading></app-header-trading>
+<app-topadv></app-topadv>
+<div class="main-page-content">
+            <div class="container-fluid">
+                   <div class="row">
+                        <div class="left-side col-md-2">
+                                <div class="adv-left-image text-left">
+                                        <p><img src="assets/images/left-adv.png"></p>
+                                      </div>
+                        </div>
+                        <div class="middle-content col-md-8">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="signup-form">
+                                      <div class="row">
+                                        <div class="col-md-12 text-center">
+                                            <h4 class="mb-4">SIGN UP</h4>
+                                        </div>
+                                          
+                                        <div class="col-md-6">
+                                            <mat-form-field class="example-full-width">
+                                                <input matInput placeholder="Username">
+                                              </mat-form-field>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <mat-form-field class="example-full-width">
+                                                <input matInput placeholder="First Name">
+                                              </mat-form-field>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <mat-form-field class="example-full-width">
+                                                <input matInput placeholder="Email ID">
+                                              </mat-form-field>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <mat-form-field class="example-full-width">
+                                                <input matInput placeholder="Mobile Number">
+                                              </mat-form-field>
+                                        </div>
+                                        
+                                        <div class="col-md-6">
+                                          <mat-form-field>
+                                            <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'">
+                                            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                                            </button>
+                                            </mat-form-field>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <mat-form-field>
+                                            <input matInput placeholder="Confirm Password" [type]="hide ? 'password' : 'text'">
+                                            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                                            </button>
+                                            </mat-form-field>
+                                        </div>
+                                       
+                                  <div class="col-md-12 mt-4">
+                                      <mat-accordion>
+                                          <mat-expansion-panel>
+                                            <mat-expansion-panel-header>
+                                              <mat-panel-title>
+                                                  Payment Information
+                                              </mat-panel-title>
+                                            </mat-expansion-panel-header>
+                                            <mat-form-field class="example-full-width">
+                                                <input matInput placeholder="Name On Card">
+                                              </mat-form-field>
+                                              <mat-form-field class="example-full-width">
+                                                  <input matInput placeholder="Card Number">
+                                                </mat-form-field>
+                                                <mat-form-field class="example-full-width">
+                                                    <input matInput placeholder="Expiry MM/YY">
+                                                  </mat-form-field>
+                                                  <mat-form-field class="example-full-width">
+                                                      <input matInput placeholder="CVV">
+                                                    </mat-form-field>
+                                                    <p class="text-center"><button mat-raised-button class="paynowbtn">Pay Now</button></p>
+                                          </mat-expansion-panel>
+                                        </mat-accordion>
+                                  </div>
+                                        <div class="col-md-12 text-center mt-4">
+                                            <button mat-raised-button class="signinbtn">SIGN IN</button>
+                                        </div>
+                                        <div class="col-md-12 text-center mt-4">
+                                          <p>OR</p>
+                                          <p><img src="assets/images/fbimg.png" width="100%"></p>
+                                          <p><img src="assets/images/google.png" width="100%"></p>
+                                        </div>          
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-side col-md-2 text-right">
+                                <div class="adv-right-image">
+                                        <p><img src="assets/images/right-adv.png"></p>
+                                      </div>
+                        </div>
+                   </div>
+                </div>
+
+        
+</div>
+
+<app-footer-trading></app-footer-trading>

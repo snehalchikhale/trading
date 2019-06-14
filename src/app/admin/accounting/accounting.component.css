@@ -1,0 +1,75 @@
+.box{
+    color: #fff;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #ddd;
+    
+    }
+    .box1{background-color: #4fdb29;}
+    .box2{background-color: #ff7474;}
+    .box3{background-color: #dbd529;}
+    .box4{background-color: #dd2d2d;}
+
+
+    .all-users ,.roles-content{
+        padding-top: 20px;
+    }
+    td.status-active {
+        color: #039c19 !important;
+    }
+    
+    td.status-inactive {
+        color: #fe0f0f !important;
+    }
+    .export {
+        padding: 0px 54px;
+        background-color: #12d1d5;
+        color: #fff;
+        
+    
+    }
+    .header {
+        margin-bottom: 10px;
+    }
+    .user-mgnt-tbl {
+        margin-top: 30px;
+    }
+
+    .order
+    {
+        color: #242bb6;
+        cursor: pointer;
+    }
+
+    .export.set {
+        padding: 0px 65px;
+    }
+
+    .bg-img
+    {
+    background: url(http://localhost:4200/assets/images/chart.png) no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgba(79,219,41,1);
+    background-position: center;
+    }
+
+    .bg-img1
+    {
+    background: url(http://localhost:4200/assets/images/chart.png) no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgba(255,116,116,1);
+    background-position: center;
+    }
+
+    .subsciption-form {
+        box-shadow: 0px 0px 10px #ddd;
+        padding: 30px 30px;
+        margin: 0px 30px;
+        background-color: #f7f7f7;
+    }
+    .header .date-picker {
+        margin-left: 33px;
+    }
+       

@@ -1,0 +1,136 @@
+<app-header></app-header>
+<app-sidebar></app-sidebar>
+<div class="main-content" [ngStyle]="{'margin-left': margin_left + 'px'}">
+    <mat-card class="main-mat-card">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="row page-content cms-opt Blog_Pages1">
+                <div class="col-md-12">
+                    <h6 class="Heading"> CMS Options </h6>
+                </div>
+              </div>
+
+            <div class="row  menu_content">
+                <div class="col-md-12 menu1">
+                <ul class="cms_menu">
+                  <li class="active" routerLink="/cms">Menu</li>
+                  <li routerLink="/cms-pages">Pages</li>
+                  <li routerLink="/background-font" >Background and Fonts</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+                     
+                        
+          
+          <div class="col-md-9">
+            
+              <mat-card class="main-mat-card1">
+                  <div class="row page-content1 menu_section page-head Blog_Pages1">
+
+                    <div class="col-md-6">
+                        <h6 class="Heading mt-3">All Pages</h6>
+                    </div>
+                       
+                       <div class="col-md-6 text-right mt-1 ">
+                          <button mat-raised-button class="export" (click)="addNewPage()">Add New Page</button>
+                       </div>
+                     </div>
+                    <div class="row page-content">
+                        <table class="table commn-table">
+                            <thead>
+                              <tr>
+                                 <th>Pages</th>
+                                 <th>Date Created</th>
+                                 <th>Status</th>
+                                 <th>Hold/Active</th>
+                                 <th>Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>How it works</td>
+                                <td>10 Jan 2019</td>
+                                <td>Active</td>
+                                <td><mat-slide-toggle></mat-slide-toggle></td>
+                                <td>
+                                    <div class="pages_icons">
+                                        <i class="material-icons" routerLink="/edit-page">edit</i>
+                                        <i class="material-icons delete">delete</i>
+                                     </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                  <td>Terms & Conditions</td>
+                                  <td>05 Feb 2019</td>
+                                  <td>Active</td>
+                                  <td><mat-slide-toggle></mat-slide-toggle></td>
+                                  <td>
+                                      <div class="pages_icons">
+                                              <i class="material-icons" routerLink="/edit-page">edit</i>
+                                          <i class="material-icons delete">delete</i>
+                                       </div>
+                                  </td>
+                                
+                               </tr>
+                               <tr>
+                                   <td>Features</td>
+                                   <td>15 Feb 2019</td>
+                                   <td>Hold</td>
+                                   <td><mat-slide-toggle></mat-slide-toggle></td>
+                                   <td>
+                                      <div class="pages_icons">
+                                              <i class="material-icons" routerLink="/edit-page">edit</i>
+                                          <i class="material-icons delete">delete</i>
+                                       </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                   <td>Privacy Policy</td>
+                                   <td>20 Mar 2019</td>
+                                   <td>Active</td>
+                                   <td><mat-slide-toggle></mat-slide-toggle></td>
+                                   <td>
+                                      <div class="pages_icons">
+                                              <i class="material-icons" routerLink="/edit-page">edit</i>
+                                          <i class="material-icons delete">delete</i>
+                                       </div>
+                                  </td>
+                                
+                                </tr>
+                                <tr>
+                                   <td>About Us</td>
+                                   <td>10 Jan 2019</td>
+                                   <td>Active</td>
+                                   <td><mat-slide-toggle></mat-slide-toggle></td>
+                                   <td>
+                                      <div class="pages_icons">
+                                              <i class="material-icons" routerLink="/edit-page">edit</i>
+                                          <i class="material-icons delete">delete</i>
+                                       </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td>Contact Us</td>
+                                    <td>05 Feb 2019</td>
+                                    <td>Active</td>
+                                    <td><mat-slide-toggle></mat-slide-toggle></td>
+                                    <td>
+                                        <div class="pages_icons">
+                                              <i class="material-icons" routerLink="/edit-page">edit</i>
+                                            <i class="material-icons delete">delete</i>
+                                         </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                          
+                          </table>
+                          
+                    </div>
+                  </mat-card>
+          </div>
+        </div>
+        </mat-card>  
+</div>
+<app-footer></app-footer>

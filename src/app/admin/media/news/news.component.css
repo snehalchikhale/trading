@@ -1,0 +1,17 @@
+.material-icons
+{
+    color:#5983e8;
+    cursor: pointer;
+}
+.export {
+    padding: 0px 32px;
+    background-color: #12d1d5;
+    color: #fff;
+}
+.Blog_Pages {
+    background-color: #f3f3f3;
+    border-width: 1px 1px 0px 1px;
+    border-style: solid;
+    border-color: #eaeaea;
+
+}

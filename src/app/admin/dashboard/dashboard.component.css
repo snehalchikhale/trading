@@ -1,0 +1,211 @@
+.user-mgnt-tbl {
+    margin-top: 30px;
+}
+
+.order
+{
+    color: #242bb6;
+}
+
+.export.set {
+    padding: 0px 65px;
+}
+
+.bg-img
+{
+background: url(http://localhost:4200/assets/images/chart.png) no-repeat;
+background-size: cover;
+background-blend-mode: overlay;
+background-color: rgba(79,219,41,1);
+background-position: center;
+}
+
+.bg-img1
+{
+background: url(http://localhost:4200/assets/images/chart.png) no-repeat;
+background-size: cover;
+background-blend-mode: overlay;
+background-color: rgba(255,116,116,1);
+background-position: center;
+}
+
+.subsciption-form {
+    box-shadow: 0px 0px 10px #ddd;
+    padding: 30px 30px;
+    margin: 0px 30px;
+    background-color: #f7f7f7;
+}
+
+.paid_usersection {
+background:url(http://localhost:4200/assets/images/total-salesimg.png) no-repeat;
+background-size: cover;
+background-blend-mode: overlay;
+background-position: center;
+background-color: rgba(255,255,255,0.9);
+padding: 40px;
+border-radius: 5px;
+box-shadow: 0px 0px 10px #ddd;
+}
+
+.paid_usersection img
+{
+width: 20%;
+float: left;
+margin-right: 15px;
+}
+
+.paid_usersection h4
+{
+
+padding: 7px 0px 7px 0px;
+font-weight: 100;
+}
+
+.user_section {
+background: url(http://localhost:4200/assets/images/user_icon.png) no-repeat;
+background-size: cover;
+background-blend-mode: overlay;
+background-position: center;
+background-color: rgba(255,255,255,0.9);
+padding: 15px 20px 20px 20px;
+border-radius: 5px;
+box-shadow: 0px 0px 10px #ddd;
+}
+
+.user_section img
+{
+width: 50%;
+float: right;
+margin: 25px 5px 0px 70px;
+}
+
+.user_section h4
+{
+
+padding: 5px 0px 0px 0px;
+font-weight: 100;
+}
+
+
+.advertisers_section {
+background: url(http://localhost:4200/assets/images/advertisers_icon.png) no-repeat;
+background-size: cover;
+background-blend-mode: overlay;
+background-position: center;
+background-color: rgba(255,255,255,0.9);
+padding: 30px 20px 50px 20px;
+border-radius: 5px;
+box-shadow: 0px 0px 10px #ddd;
+}
+
+.advertisers_section img
+{
+width: 25%;
+float: left;
+/* margin: 0px 20px 0px 70px; */
+margin: 0px 20px 0px 40px;
+}
+
+.advertisers_section h4
+{
+
+padding: 7px 0px 7px 0px;
+font-weight: 100;
+}
+
+
+.row.dashboard_second {
+padding: 32px 0px;
+}
+
+.monthly_section {
+background: url(http://localhost:4200/assets/images/total-salesimg.png) no-repeat;
+background-size: cover;
+background-blend-mode: overlay;
+background-position: center;
+background-color: rgba(255,255,255,0.9);
+padding: 15px 20px 20px 20px;
+border-radius: 5px;
+box-shadow: 0px 0px 10px #ddd;
+}
+
+.monthly_section img
+{
+width: 55%;
+float: right;
+margin: 25px 5px 0px 70px;
+}
+
+.monthly_section h4
+{
+
+padding: 5px 0px 0px 0px;
+font-weight: 100;
+}
+
+
+.expried_section {
+background: url(http://localhost:4200/assets/images/expried_icon.png) no-repeat;
+background-size: cover;
+background-blend-mode: overlay;
+background-position: center;
+background-color: rgba(255,255,255,0.9);
+padding: 30px 20px 50px 20px;
+border-radius: 5px;
+box-shadow: 0px 0px 10px #ddd;
+}
+
+.expried_section img
+{
+width: 20%;
+float: left;
+margin: 0px 20px 0px 70px;
+}
+
+.expried_section h4
+{
+padding: 7px 0px 7px 0px;
+font-weight: 100;
+}
+
+
+.graph_chartsection {
+background: #fff;
+padding: 15px 2px;
+border-radius: 5px;
+box-shadow: 0px 0px 10px #ddd;
+}
+
+.graph_secheader {
+border-bottom: 1px solid #eee;
+}
+.graph_secheader h5
+{
+
+font-weight: 400;
+padding: 0px 0px 0px 20px;
+}
+
+.graph_chartsection img {
+width: 100%;
+}
+
+mat-form-field.today_sales {
+float: right;
+margin: -50px 20px 0px 0px;
+}
+
+.pie_chartsection {
+background: #fff;
+padding: 15px 2px;
+border-radius: 5px;
+box-shadow: 0px 0px 10px #ddd;
+}
+
+.pie_chartsection img {
+width: 99%;
+}
+
+.dashboard_second p ,.dashboard_first p  {
+color: #767676;
+}

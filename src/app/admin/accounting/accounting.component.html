@@ -1,9 +1,192 @@
 <app-header></app-header>
 <app-sidebar></app-sidebar>
 <div class="main-content" [ngStyle]="{'margin-left': margin_left + 'px'}">
-  <div class="content">
-      <h2>accounting</h2>
-  </div>
-    
+    <mat-card class="main-mat-card">
+        <div class="row ">
+            <div class="col-md-4 ">
+              <div class="box box1 bg-img">
+                  <div class="row">
+                 <div class="col-md-6 text-right">
+                      <img src="assets/images/line-chart.png" alt="chart.jpg" width="60px">
+                  </div>
+                  <div class="col-md-6">
+                      <h4 class="m-0">2000</h4>
+                      <p class="m-0">Todays Sales</p>
+                  </div>
+                  
+                  </div>
+                  
+             </div>
+            </div>
+          
+
+          <div class="col-md-4">
+              <div class="box box2  bg-img1">
+                <div class="row">
+                 <div class="col-md-6 text-right">
+                      <img src="assets/images/line-chart.png" alt="chart.jpg" width="60px">
+                  </div>
+                  <div class="col-md-6">
+                      <h4 class="m-0">2000</h4>
+                      <p class="m-0">Total Sales</p>
+                  </div>
+                  </div>
+             </div>
+            </div>
+        </div>
+  
+            <div class="row page-content user-mgnt-tbl">
+                <div class="col-md-12">
+                    <div class="row header">
+                       
+                        <div class="col-md-2">
+                           <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Search by Name" >
+                            </mat-form-field>
+                        </div>
+                        
+                        <div class="col-md-3">
+                            <mat-form-field class="example-full-width1 date-picker">
+                            <input matInput  [matDatepicker]="picker" placeholder="Choose a date">
+                           <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker>
+                            </mat-form-field>
+                        </div>
+                        
+                        <div class="col-md-3">
+                            <mat-form-field class="example-full-width2" >
+                            <input matInput [matDatepicker]="picker1" placeholder="Choose a date" >
+                            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                            <mat-datepicker #picker1></mat-datepicker>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-2 text-right">
+                                <button class="mat-raised-button export" >Export</button>
+                        </div>
+                        <div class="col-md-2 ">
+                           
+                            <button class="mat-raised-button export" (click)="addOrder()" >Add</button>
+                        </div>
+                        </div>  
+                    
+                        <table class="table commn-table">
+                        <thead>
+                          <tr>
+                             <th><mat-checkbox></mat-checkbox></th>
+                             <th>Sr. No.</th>
+                             <th>Order No.</th>
+                             <th>User Name</th>
+                             <th>Email</th>
+                             <th>Status</th>
+                             <th>Payment </th>
+                             <th>Amount</th>
+                             <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><mat-checkbox></mat-checkbox></td>
+                            <td>1</td>
+                            <td>01123</td>
+                            <td>John</td>
+                            <td>Testing@gmail.com</td>
+                            <td class="status-active">Active</td>
+                            <td>Paid</td>
+                            <td>1000</td>
+                            <td class="order">Order Details</td>
+                          </tr>
+                          <tr>
+                             <td><mat-checkbox></mat-checkbox></td>
+                             <td>2</td>
+                            <td>01124</td>
+                            <td>John</td>
+                            <td>Testing@gmail.com</td>
+                            <td class="status-inactive">Deactive</td>
+                            <td>Unpaid</td>
+                            <td>1000</td>
+                            <td class="order">Order Details</td>
+                           </tr>
+                           <tr>
+                               <td><mat-checkbox></mat-checkbox></td>
+                               <td>3</td>
+                            <td>01125</td>
+                            <td>John</td>
+                            <td>Testing@gmail.com</td>
+                            <td class="status-inactive">Deactive</td>
+                            <td>Unpaid</td>
+                            <td>1000</td>
+                            <td class="order">Order Details</td>
+                             </tr>
+                             <tr>
+                                 <td><mat-checkbox></mat-checkbox></td>
+                                 <td>4</td>
+                                 <td>01126</td>
+                                 <td>John</td>
+                                 <td>Testing@gmail.com</td>
+                                 <td class="status-active">Active</td>
+                                 <td>Paid</td>
+                                 <td>1000</td>
+                                 <td class="order">Order Details</td>
+                             </tr>
+                             <tr>
+                                   <td><mat-checkbox></mat-checkbox></td>
+                                   <td>5</td>
+                                   <td>01127</td>
+                                   <td>John</td>
+                                   <td>Testing@gmail.com</td>
+                                   <td class="status-inactive">Deactive</td>
+                                   <td>Unpaid</td>
+                                   <td>1000</td>
+                                   <td class="order">Order Details</td>
+                                 </tr>
+                                 <tr>
+                                     <td><mat-checkbox></mat-checkbox></td>
+                                     <td>6</td>
+                                     <td>01128</td>
+                                     <td>John</td>
+                                     <td>Testing@gmail.com</td>
+                                     <td class="status-inactive">Deactive</td>
+                                     <td>Unpaid</td>
+                                     <td>1000</td>
+                                     <td class="order">Order Details</td>
+                                   </tr>
+                        </tbody>
+                      </table>
+                      <div class="subsciption-form">
+                          <div class="row ">
+                              <div class="col-md-3 order">
+                                  Subscription Renewal:
+                              </div>
+                              <div class="col-md-3">
+                                  Subscription Cost: 10000
+                                </div>
+                                <div class="col-md-3">
+                                  Subscription Peroid: 123xyz
+                                  </div>
+                                  <div class="col-md-3 text-right">
+                                      <button class="mat-raised-button export set" >Set</button>
+                                    </div>
+                                    
+                          </div>
+                  
+                          <div class="row mt-3 ">
+                              <div class="col-md-3 order">
+                                  Cancle Order:
+                              </div>
+                              <div class="col-md-3">
+                                  User Name: John Mark
+                                </div>
+                                <div class="col-md-3">
+                                  Account No.: 1234
+                                  </div>
+                                  <div class="col-md-3 text-right">
+                                      <button class="mat-raised-button export" >Cancle</button>
+                                    </div>
+                                   
+                          </div>
+                      </div>
+                      </div>
+                    </div>
+        </mat-card>
 </div>
 <app-footer></app-footer>

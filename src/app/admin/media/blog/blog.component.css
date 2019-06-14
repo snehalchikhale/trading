@@ -1,0 +1,40 @@
+.Admin {
+    padding-top: 20px;
+}
+
+/* .export {
+    padding: 0px 54px;
+    background-color: #12d1d5;
+    color: #fff;
+} */
+.Blog_Pages {
+    background-color: #f3f3f3;
+    border-width: 1px 1px 0px 1px;
+    border-style: solid;
+    border-color: #eaeaea;
+
+}
+
+/* .export {
+    padding: 2px 32px !important;
+    background-color: #12d1d5;
+    color: #fff;
+} */
+
+.delete
+{
+   padding-left: 18px;
+}
+
+.material-icons
+{
+    color:#5983e8;
+}
+
+.blog_card
+{
+    background: #f7f7f7;
+}
+.icons .material-icons {
+    cursor: pointer;
+}

@@ -1,0 +1,90 @@
+.fill-star {
+    color: #bdb30d;
+}
+.star {
+    color: #b8b9b9;
+}
+.testimonials .mat-icon {
+    font-size: 22px;
+}
+.followbtn {
+    background-color: #259c15;
+    color: #fff;
+    margin-left: 15px !important;
+    border-radius: 30px;
+    padding: 0px 20px !important;
+    line-height: 2.2em;
+}
+.testimonials {
+    padding:20px 10px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.testimonials:first-child{ border-top: 1px solid #ddd;}
+.follow {
+    margin-top: 14px !important;
+    text-align: right;
+}
+.testimonials h6 {
+    margin-bottom: 4px;
+    color: #1256a0;
+    font-size: 18px;
+}
+.performers-right{
+    border:1px solid #ddd;
+    border-left: none;
+}
+.performers-right .header {
+    text-align: center;
+    padding: 25px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #ddd;
+}
+table.mat-table {
+    width: 100%;
+}
+.performers-right h4 {
+    color: #575962;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    text-transform: none;
+    padding: 10px 16px 10px;
+}
+.account-txt {
+    margin-bottom: 15px;
+}
+.performers-right table thead tr {
+    background-color: #f3fcff;
+}
+.performers-right table tbody tr:last-child {
+    border-bottom: 1px solid #ddd;
+}
+.performers-right table thead tr:first-child {
+    border-top: 1px solid #ddd;
+}
+.followbtn:hover {
+    background-color: #1758A1;
+}
+@media screen and (min-width:1024px) and (max-width:1300px){
+    .data {
+        text-align: right;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1023px){
+    .performers-left,.performers-right{
+        flex: 100% !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+@media screen and (max-width:768px){
+    .performers-right{
+        border-left: 1px solid #ddd;
+    }
+    .follow{
+        
+        text-align: left !important;
+    }
+}

@@ -1,0 +1,11 @@
+.trading-log-tbl tbody tr td,
+.trading-log-tbl thead tr th {
+    padding: 15px 9px 15px;
+}
+.time{
+    background-color: #27ff00;
+    font-weight: 500;
+    margin: 0px 16px 0px 0px;
+    text-align: center;
+    
+    }

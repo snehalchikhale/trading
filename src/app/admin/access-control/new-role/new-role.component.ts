@@ -1,0 +1,26 @@
+import { Component, OnInit } from '@angular/core';
+import { SharedService } from '../../../service/shared.service';
+
+@Component({
+  selector: 'app-new-role',
+  templateUrl: './new-role.component.html',
+  styleUrls: ['./new-role.component.css']
+})
+export class NewRoleComponent implements OnInit {
+
+  constructor(private shared:SharedService) { }
+  margin_left:number=230;
+  // data:string='Dashboard';
+  ngOnInit() {
+
+    this.shared.aToggleEvent.subscribe((data:string) => {
+      console.log('check', data);
+      if(data=='Ok'){
+        this.margin_left=75;
+      }else{
+        this.margin_left = 230;
+      }
+    });
+  }
+
+}

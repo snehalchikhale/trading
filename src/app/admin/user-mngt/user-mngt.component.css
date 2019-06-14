@@ -1,0 +1,35 @@
+.box{
+    color: #fff;
+    padding:30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #ddd;
+    transition: 1s ease all;
+    
+    }
+    .box1{background-color: #4fdb29;}
+    .box2{background-color: #ff7474;}
+    .box3{background-color: #dbd529;}
+    .box4{background-color: #dd2d2d;}
+
+
+    .all-users ,.roles-content{
+        padding-top: 20px;
+    }
+    td.status-active {
+        color: #039c19 !important;
+    }
+    
+    td.status-inactive {
+        color: #fe0f0f !important;
+    }
+    .export {
+        padding: 0px 54px;
+        background-color: #12d1d5;
+        color: #fff;
+    }
+    .header {
+        margin-bottom: 10px;
+    }
+    .user-mgnt-tbl {
+        margin-top: 30px;
+    }

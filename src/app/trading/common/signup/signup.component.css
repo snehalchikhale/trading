@@ -1,0 +1,16 @@
+.payment-title h6 {
+    font-size: 14px;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+.paynowbtn {
+    background-color: #1256a0;
+    color: #fff;
+    border-radius: 30px;
+}
+.mat-expansion-panel-header-title {
+    color: #6c6c6c;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+}

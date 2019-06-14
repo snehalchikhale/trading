@@ -1,0 +1,17 @@
+.cancle
+{
+    background-color: #8e8e8e;
+    color: #fff;
+    margin-right: 15px;
+    padding: 0px 34px;
+}
+.Blog_Pages {
+    background-color: #f3f3f3;
+    border-width: 1px 1px 0px 1px;
+    border-style: solid;
+    border-color: #eaeaea;
+
+}
+.row.page-content.input-data {
+    padding-bottom: 0px;
+}

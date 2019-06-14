@@ -1,0 +1,12 @@
+.all-users ,.roles-content{
+    padding-top: 20px;
+}
+td.status-active {
+    color: #039c19 !important;
+}
+td.status-active {
+    color: #039c19 !important;
+}
+td.status-inactive {
+    color: #fe0f0f !important;
+}

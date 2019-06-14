@@ -1,0 +1,417 @@
+<app-header-trading></app-header-trading>
+<app-submenubar></app-submenubar>
+<app-topadv></app-topadv>
+<div class="main-page-content">
+            <div class="container-fluid">
+                   <div class="row">
+                        <div class="left-side col-md-2">
+                                <div class="adv-left-image text-left">
+                                        <p><img src="assets/images/left-adv.png"></p>
+                                      </div>
+                        </div>
+                        <div class="middle-content planning col-md-8">
+                            <div class="row">
+                                <div class="col-md-6">
+                                <img src="assets/images/planning-chart.jpg" class="graph-img" alt="News" width="100%">
+                                </div>
+                                <div class="col-md-6">
+                                <table class="table sts-rpt-tbl">
+                                                <thead>
+                                                  <tr>
+                                                    <th>Sr. No.</th>
+                                                     <th>Current Status</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    
+                                                    <td>1</td>
+                                                    <td>Capital</td>
+                                                </tr>
+                                                <tr>
+                                                     
+                                                    <td>2</td>
+                                                    <td>Investment</td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                      
+                                                    <td>3</td>
+                                                    <td>Goal Status</td>
+                                                </tr>
+                                                <tr>
+                                                         
+                                                    <td>4</td>
+                                                    <td>Set of PIP</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>Stop Loss</td>
+                                                </tr>
+                                                </tbody>
+                                </table>
+                                </div>
+                            </div>
+                           
+                            <div class="row">
+                                    <div class="col-md-12">
+                                                <h5 class="sub-title mb-4">Day Plan</h5>
+                                            <div class="table-responsive sts-rpt-tbl">
+                                               
+                                            <table class="table mt-4">
+                                                <thead>
+                                                      <tr>
+                                                        <th>Capital</th>
+                                                        <th>Investment</th>
+                                                        <th>Set of PIP</th>
+                                                        <th>Stop Loss</th>
+                                                        <th>Leverage</th>
+                                                        <th>Min PIP</th>
+                                                        <th>Max PIP</th>
+                                                        <th>Take Profit</th>
+                                                        <th></th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>
+                                                          <mat-form-field>
+                                                          <input matInput placeholder="Enter Here">
+                                                           </mat-form-field>
+                                                        </td>
+
+                                                        <td>
+                                                           <mat-form-field>
+                                                           <input matInput placeholder="Enter Here">
+                                                           </mat-form-field>
+                                                                       
+                                                        </td>
+
+                                                        <td>
+                                                           <mat-form-field>
+                                                           <input matInput placeholder="Enter Here">
+                                                           </mat-form-field>
+                                                        </td>
+                                                        
+
+                                                        <td>
+                                                           <mat-form-field>
+                                                           <input matInput placeholder="Enter Here">
+                                                           </mat-form-field>
+                                                          
+                                                        </td>
+                                                        
+
+                                                        <td>
+                                                         <mat-form-field>
+                                                         <input matInput placeholder="Enter Here">
+                                                         </mat-form-field>
+                                                        </td>
+                                                        
+
+                                                        <td>
+                                                         <mat-form-field>
+                                                         <input matInput placeholder="Enter Here">
+                                                         </mat-form-field>
+                                                        </td>
+                                                        
+                                                        <td>
+                                                        <mat-form-field>
+                                                        <input matInput placeholder="Enter Here">
+                                                        </mat-form-field>
+                                                        </td>
+                                                        
+                                                        <td>
+                                                        <mat-form-field>
+                                                        <input matInput placeholder="Enter Here">
+                                                        </mat-form-field>       
+                                                        </td>
+
+                                                <td><button mat-raised-button class="submit mt-4 cal-btn" >Submit</button></td>
+                                                        
+                                                    </tr>
+                                                    
+                                                    </tbody>
+                                            </table>
+                                            </div>    
+                                    </div>
+                                    
+                            </div>
+
+                            <div class="row mt-4">
+                                    <div class="col-md-12">
+                                            <h5 class="sub-title mb-4">Trading Goal</h5>
+                                            <div class="table-responsive sts-rpt-tbl">
+                                                
+                                            <table class="table mt-4">
+                                                    <thead>
+                                                      <tr>
+                                                        <th>From Date</th>
+                                                        <th>To Date</th>
+                                                        <th>Pair</th>
+                                                        <th>Volume</th>
+                                                        <th>Stop Loss</th>
+                                                        <th>Min PIP</th>
+                                                        <th>Max PIP</th>
+                                                        <th>Take Profit</th>
+                                                        <th></th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>
+                                                        <mat-form-field>
+                                                        <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+                                                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                                        <mat-datepicker #picker></mat-datepicker>
+                                                        </mat-form-field>
+                                                        </td>
+
+                                                        <td>
+                                                        <mat-form-field>
+                                                        <input matInput [matDatepicker]="picker1" placeholder="Choose a date">
+                                                        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                                                        <mat-datepicker #picker1></mat-datepicker>
+                                                        </mat-form-field>
+                                                        </td>
+
+                                                        <td>
+                                                        <mat-form-field >
+                                                        <input matInput placeholder="Enter Here" >
+                                                        </mat-form-field>
+                                                        </td>
+                                                        
+                                                        <td>
+                                                        <mat-form-field>
+                                                        <input matInput placeholder="Enter Here">
+                                                        </mat-form-field>
+                                                                    
+                                                        </td>
+                                                        
+
+                                                        <td>
+                                                        <mat-form-field>
+                                                        <input matInput placeholder="Enter Here">
+                                                        </mat-form-field>
+                                                                 
+                                                        </td>
+                                                        
+
+                                                        <td>
+                                                        <mat-form-field>
+                                                        <input matInput placeholder="Enter Here" >
+                                                        </mat-form-field>
+                                                                    
+                                                        </td>
+                                                        
+                                                        <td>
+                                                        <mat-form-field>
+                                                        <input matInput placeholder="Enter Here">
+                                                        </mat-form-field>
+                                                                     
+                                                        </td>
+                                                        
+                                                        <td>
+                                                        <mat-form-field>
+                                                        <input matInput placeholder="Enter Here" >
+                                                        </mat-form-field>
+                                                        </td>
+
+                                                <td><button mat-raised-button class="submit mt-4 cal-btn" >Submit</button></td>
+                                                        
+                                                    </tr>
+                                                    
+                                                    </tbody>
+                                            </table>
+                                            </div>    
+                                    </div>
+                                    
+                            </div>
+
+                            <div class="row mt-4">
+                              <div class="col-md-6">
+                                <h5 class="sub-title mb-4">Trading Session</h5>
+                                  <div class="row trading-session">
+                                     <div class="col-8 col-md-4">
+                                     <mat-form-field class="trading">
+                                     <input matInput [matDatepicker]="picker2" placeholder="Select Date">
+                                     <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                                     <mat-datepicker #picker2></mat-datepicker>
+                                     </mat-form-field>      
+                                     </div>
+                                     
+                                     <div class="col-8 col-md-4">
+                                      <mat-form-field class="trading">
+                                      <input matInput [matDatepicker]="picker3" placeholder="Choose a date">
+                                      <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
+                                      <mat-datepicker #picker3></mat-datepicker>
+                                      </mat-form-field>            
+                                                    
+                                     </div>
+
+                                     <div class="col-8 col-md-4">
+                                     <mat-form-field class="trading">
+                                     <input matInput [matDatepicker]="picker4" placeholder="Choose a date">
+                                     <mat-datepicker-toggle matSuffix [for]="picker4"></mat-datepicker-toggle>
+                                     <mat-datepicker #picker4></mat-datepicker>
+                                     </mat-form-field>       
+                                     </div>
+                                     <div class="col-md-4">
+                                        <button mat-raised-button class="submit-button mt-4 cal-btn" >Submit</button>   
+                                      </div>
+                                      <div class="col-md-8">
+                                         <div class="note">
+                                                 <h6>Note </h6>
+                                                 <p>Date: 10th June 2019</p>
+                                                 <span>From Time: 12:00am</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>To Time: 12:00pm</span>
+                                         </div>     
+                                      </div>
+                                 </div> 
+                                
+                                   
+                                </div>
+
+                                <div class="col-md-6">
+                                <h5 class="sub-title mb-4 off-tra">Official Trading Hours</h5>
+                                <div class="table-responsive sts-rpt-tbl">
+                                <table class="table commn-table  mt-4">
+                                <thead>
+                                <tr>
+                                <th>Sr. No.</th>
+                                <th>Country</th>
+                                <th>Trading Day</th>
+                                <th>Trading Hours</th>
+                                <th></th>
+                                </tr>
+                                <tr class="trading-hours">
+                                   <th></th>
+                                   <th></th>
+                                   <th></th>
+                                   <th>From</th>
+                                   <th>End</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                        <td>1</td>
+                                        <td>Saudi Arebia</td>
+                                        <td>Monday</td>
+                                        <td>10.00am</td>
+                                        <td>02:00pm</td>
+                                </tr>
+                                <tr>
+                                        <td>2</td>
+                                        <td>Saudi Arebia</td>
+                                        <td>Tuesday</td>
+                                        <td>10.00am</td>
+                                        <td>02:00pm</td>
+                                 </tr>
+                                <tr>
+                                        <td>3</td>
+                                        <td>Saudi Arebia</td>
+                                        <td>Wednesday</td>
+                                        <td>10.00am</td>
+                                        <td>02:00pm</td>
+                                </tr>
+                                
+                                </tbody>
+                                </table>
+                              </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-4">
+                                        <div class="col-md-6">
+                                        <h5 class="sub-title">Trading Setup</h5>
+                                        <div class="table-responsive sts-rpt-tbl mt-4">
+                                        <table class="table mt-4">
+                                        <thead>
+                                        <tr>
+                                                <th>Sr. No.</th>
+                                                <th>Setting Name</th>
+                                                <th>Source</th>
+                                                <th>Indicator Name</th>
+                                                <th>Personal Note</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                                <td>1</td>
+                                                <td>Setting 1</td>
+                                                <td>Economical Calender</td>
+                                                <td>Indicator 1</td>
+                                                <td>Note1</td>
+                                        </tr>
+                                        <tr>
+                                                <td>2</td>
+                                                <td>Setting 2</td>
+                                                <td>Signal Provider</td>
+                                                <td>Indicator</td>
+                                                <td>Note2</td>
+                                        </tr>
+                                        <tr>
+                                                <td>3</td>
+                                                <td>Setting 3</td>
+                                                <td>Charts</td>
+                                                <td>Indicator 3</td>
+                                                <td>Note3</td>
+                                        </tr>
+                                                        
+                                        </tbody>
+                                        </table> 
+                                      </div>   
+                                        </div>
+          
+                                          <div class="col-md-6">
+                                          <h5 class="sub-title off-tra">Expert Analyst</h5>
+                                          <table class="table sts-rpt-tbl mt-4">
+                                          <thead>
+                                          <tr>
+                                          <th>Sr. No.</th>
+                                          <th>Name</th>
+                                          <th>Review</th>
+                                          
+                                          </tr>
+                                          
+                                          </thead>
+                                          <tbody>
+                                          <tr>
+                                                <td>1</td>
+                                                <td>John Mark</td>
+                                                <td>Good</td>
+                                                  
+                                          </tr>
+                                          <tr>
+                                                <td>2</td>
+                                                <td>John Mark</td>
+                                                <td>Bad</td>
+                                           </tr>
+                                          <tr>
+                                                <td>3</td>
+                                                <td>John Mark</td>
+                                                <td>Average</td>
+                                          </tr>
+                                          <tr>
+                                                <td>4</td>
+                                                <td>John Mark</td>
+                                                <td>Excellent</td>
+
+                                          </tr>
+                                          
+                                          </tbody>
+                                          </table>
+                                          </div>
+                            </div>
+                      
+                        </div>  
+                        <div class="right-side col-md-2 text-right">
+                                <div class="adv-right-image">
+                                        <p><img src="assets/images/right-adv.png"></p>
+                                </div>
+                        </div>
+                   </div>
+                </div>
+
+        
+</div>
+<app-footer-trading></app-footer-trading>

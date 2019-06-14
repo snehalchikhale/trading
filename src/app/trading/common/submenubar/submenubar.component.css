@@ -1,0 +1,89 @@
+.header-menu {
+    background-color: #f7f7f7;
+    color: #fff;
+    
+}
+.header-menu ul li {
+    display: table-cell;
+    padding:15px 24px;
+    position: relative;
+    cursor: pointer;
+    color: #6c6c6c;
+    border-bottom: 3px solid #f7f7f7;
+}
+
+.header-menu ul li.active{border-bottom: 3px solid #c9c8c8;}
+.header-menu ul {
+    list-style: none;
+    display: table;
+    padding-left: 0px;
+    margin: 0 auto;
+}
+.header-menu ul li:hover{border-bottom: 3px solid #c9c8c8;}
+.header-menu ul li:before {
+    content: "";
+    width: 1px;
+    height: 22px;
+    position: absolute;
+    background-color: #ddd;
+    right: 0;
+}
+.header-menu ul li:last-child::before{display: none;}
+.dropdown-item {
+    font-size: 14px;
+    padding: 10px 15px;
+    text-align: left;
+}
+button.navbar-toggler {
+    padding-left: 3px;
+}
+
+.header-navbar{background-color: #f7f7f7;padding: 5px 20px 0px;}
+li.nav-item a {
+    color: #6c6c6c;
+    font-size: 15px !important;
+    border-bottom: 3px solid #f7f7f7;
+    cursor: pointer;
+}
+li.nav-item a:hover{border-bottom: 3px solid #c9c8c8;}
+.header-navbar .navbar-nav {margin: 0 auto;}
+.header-navbar .navbar-nav li{margin-right:10px; }
+.header-navbar .dropdown-menu.show{background-color:#f7f7f7 !important;border: none;}
+.navbar-toggler-icon{
+    color: #c9c8c8;
+    margin-left: 6px;
+    border: 2px solid #c9c8c8;
+    line-height: 1.2;
+    font-size: 20px;
+}
+span.submenu-text {
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+.dropdown-item:active {
+    background-color: #f7f7f7 !important;
+}
+
+@media screen and (max-width:991px){
+    li.nav-item a:hover{border:none;}
+    .dropdown-menu.show {
+        padding: 0px;
+    }
+    div#about-menu {
+        padding-left: 11px;
+    }
+    .dropdown-menu.show {
+        padding-top: 0px;
+    }
+    li.nav-item.dropdown.show a.dropdown-item{text-align: left !important;  padding: 5px !important;}
+    .header-navbar{
+        
+        padding: 5px 3px 0px;
+    }
+    li.nav-item.dropdown.show a.dropdown-item {
+        font-size: 13px !important;
+        text-align: left;
+    }
+}

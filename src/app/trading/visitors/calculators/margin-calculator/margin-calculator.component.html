@@ -1,0 +1,73 @@
+<app-header-trading></app-header-trading>
+<app-topadv></app-topadv>
+<div class="main-page-content">
+            <div class="container-fluid">
+                   <div class="row">
+                        <div class="left-side col-md-2">
+                                <div class="adv-left-image text-left">
+                                        <p><img src="assets/images/left-adv.png"></p>
+                                      </div>
+                        </div>
+                        <div class="middle-content col-md-8">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 class="mb-4 text-center">Margin Calculator</h4>
+                                    <div class="row calcu-mrg">
+                                      <div class="col-md-4 title"><p>Currency Pair</p></div>
+                                      <div class="col-md-8"><mat-form-field>
+                                          <input matInput placeholder="Currency Pair">
+                                        </mat-form-field></div>
+                                      <div class="col-md-4 title"><p>Account Currency</p></div>
+                                      <div class="col-md-8"><mat-form-field>
+                                          <mat-select #fontSize value="16px">
+                                            <mat-option value="10px">USD</mat-option>
+                                            <mat-option value="12px">USD</mat-option>
+                                            <mat-option value="14px">USD</mat-option>
+                                            <mat-option value="16px">USD</mat-option>
+                                            <mat-option value="18px">USD</mat-option>
+                                            <mat-option value="20px">USD</mat-option>
+                                          </mat-select>
+                                        </mat-form-field></div>
+                                      <div class="col-md-4 title"><p>Conversion Price(EUR/USD)</p></div>
+                                      <div class="col-md-8"><mat-form-field>
+                                          <mat-select #fontSize value="16px">
+                                            <mat-option value="10px">Buy/Long</mat-option>
+                                            <mat-option value="12px">Buy/Long</mat-option>
+                                            <mat-option value="14px">Buy/Long</mat-option>
+                                            <mat-option value="16px">Buy/Long</mat-option>
+                                            <mat-option value="18px">Buy/Long</mat-option>
+                                            <mat-option value="20px">Buy/Long</mat-option>
+                                          </mat-select>
+                                        </mat-form-field></div>
+                                      <div class="col-md-4 title"><p>Trade Size</p></div>
+                                      <div class="col-md-8"><mat-form-field>
+                                          <input matInput placeholder="1000">
+                                        </mat-form-field></div>
+                                      <div class="col-md-4 title"><p>Margin Ratio</p></div>
+                                      <div class="col-md-8"><mat-form-field>
+                                          <input matInput placeholder="00">
+                                        </mat-form-field></div>
+                                      <div class="col-md-4 title"><p>Margin Used(USD)</p></div>
+                                      <div class="col-md-8"><mat-form-field>
+                                          <input matInput placeholder="00">
+                                        </mat-form-field></div>
+                                        <div class="col-md-12 text-center action-btn">
+                                          <span><button mat-raised-button class="cal-btn" >Calculate</button></span>
+                                          <span><button mat-raised-button class="refrsh-btn">Refresh<mat-icon class="ref-icon">refresh</mat-icon></button></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-side col-md-2 text-right">
+                                <div class="adv-right-image">
+                                        <p><img src="assets/images/right-adv.png"></p>
+                                      </div>
+                        </div>
+                   </div>
+                </div>
+
+        
+</div>
+
+<app-footer-trading></app-footer-trading>

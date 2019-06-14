@@ -1,0 +1,37 @@
+.right-content {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.box{
+    color: #fff;
+    padding: 15px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #ddd;
+    }
+    
+    .box4{background-color: #dd2d2d;}
+
+
+   
+    .header {
+        margin-bottom: 10px;
+    }
+    .user-mgnt-tbl {
+        margin-top: 30px;
+    }
+
+    .payment-hist
+    {
+        margin-top: 8px;
+    }
+
+    .user{
+        color:#737373;
+        border-bottom: 1px #ddd solid;
+    }
+
+    .address
+    {
+        color:#424242;
+    }

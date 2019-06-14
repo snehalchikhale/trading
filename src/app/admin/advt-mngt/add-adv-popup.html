@@ -1,0 +1,79 @@
+<div class="add-adv-popup">
+        <div mat-dialog-content class="pb-4">
+          <div class="row popup-head">
+            <div class="col-md-12">
+                <h5>Add Header</h5>
+            </div>
+            
+          </div>
+          <div class="row">
+            <div class="col-md-4 pb-2">
+            <mat-form-field >
+                    <input matInput #message placeholder="Name">
+            </mat-form-field> 
+            </div>
+            <div class="col-md-4 pb-2">
+                <mat-form-field >
+                    <input matInput #message placeholder="Compnay">
+            </mat-form-field> 
+              </div>
+              <div class="col-md-4 pb-2">
+                  <mat-form-field>
+                      <mat-label>Advt. Place</mat-label>
+                      <mat-select>
+                        <mat-option>
+                          Advt. Place
+                        </mat-option>
+                        <mat-option>
+                            Advt. Place
+                          </mat-option>
+                          <mat-option>
+                              Advt. Place
+                            </mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="col-md-4 pb-2">
+                    <mat-form-field class="example-full-width2" >
+                        <input matInput placeholder="From" >
+                        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                        <mat-datepicker #picker1></mat-datepicker>
+                      </mat-form-field>
+                </div>
+                <div class="col-md-4 pb-2">
+                    <mat-form-field class="example-full-width2" >
+                        <input matInput [matDatepicker]="picker1" placeholder="To" >
+                        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                        <mat-datepicker #picker1></mat-datepicker>
+                      </mat-form-field>
+                  </div>
+                  <div class="col-md-4 pb-2">
+                      <mat-form-field >
+                          <input matInput #message placeholder="Ammount">
+                  </mat-form-field> 
+                    </div>
+                    <div class="col-md-4 pb-2">
+                        <mat-form-field>
+                            <mat-label>Advt. Place</mat-label>
+                            <mat-select>
+                              <mat-option>
+                                Advt. Place
+                              </mat-option>
+                              <mat-option>
+                                  Advt. Place
+                                </mat-option>
+                                <mat-option>
+                                    Advt. Place
+                                  </mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                      </div>
+          </div>
+            </div>
+          <div class="row dialog-actions text-center">
+            <div class="col-md-12">
+                <button mat-button (click)="onNoClick()" class="cancelbtn btn mr-4">Cancel</button>
+                <button mat-button [mat-dialog-close]="data" cdkFocusInitial class="btn">Add Now</button>
+            </div>
+          </div>
+</div>
