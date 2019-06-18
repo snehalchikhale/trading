@@ -1,230 +1,247 @@
+.col-md-4.chat_usernames {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 0;
+}
 
-    .col-md-4.chat_usernames {
-        background: #fff;
-        border: 1px solid #eee;
-        padding: 0;
+header.chat_userprofile {
+    padding: 10px 0px 10px 0px;
+}
+
+.user_img {
+    width: 35%;
+    float: left;
+}
+
+.user_img img {
+    width: 60px;
+    border-radius: 50%;
+    
+}
+
+.chat_searchsection {
+    background: #eee;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+mat-form-field.chat_search {
+    width: 90%;
+}
+
+i.material-icons.chat_searchicon {
+    float: right;
+    cursor: pointer;
+    margin: -20px 0px 0px 0px;
+}
+
+ul.chatuser_menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.chatuser_menu li {
+    border-bottom: 1px solid #eaeaea;
+    cursor: pointer;
+    width: 25%;
+    float: left;
+    text-align: center;
+    background:#f3f3f3ad;
+}
+
+.chatuser_menu li a {
+    color: #555;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.user_profile h2 {
+    color: #1256a0;
+    font-size: 16px;
+    padding: 10px 0px 0px 0px;
+}
+
+.user_profile h6 {
+    font-size: 12px;
+    font-weight: 200;
+    padding: 0;
+    margin: 0;
+}
+
+.user_profile {
+    padding:15px 0px 25px 0px;
+    border-bottom: 1px solid #ddd;
+}
+
+i.material-icons.chat_icon {
+    font-size: 27px;
+    padding: 10px 10px 0px 10px;
+}
+
+li.active a i.material-icons.chat_icon {
+    color: #11579f;
+}
+
+.chatuser_menu li span {
+    color: #555;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+.chat_userprofile h2{
+    margin-bottom: 4px;
+    color: #1256a0;
+    font-size: 18px;
+}
+
+.fade {
+    opacity: 1;
+    transition: opacity .15s linear;
+}
+
+header.chat_userprofile p {
+    margin: 0;
+    padding: 0;
+    color: #929292;
+}
+
+header.chat_userprofile h6 {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    color: #929292;
+}
+
+.chats_section {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 0;
+    padding-bottom: 60px;
+}
+
+.chatsec_header h2 {
+    color: #1256a0;
+    font-size: 18px;
+    padding: 10px 0px 0px 0px;
+}
+
+.chatsec_header h6 {
+    font-size: 12px;
+    font-weight: 200;
+    padding: 0;
+    margin: 0;
+}
+
+.chat_person {
+    width: 20%;
+    float: left;
+}
+
+.chat_person img {
+    width: 45%;
+    border-radius: 50%;
+    margin: 0px 0px 0px 55px;
+}
+
+header.chatsec_header {
+    padding: 10px 0px 20px 0px;
+    background: #eee;
+    border-bottom: 1px solid #ddd;
+}
+
+button.chat_more.mat-button {
+    float: right;
+    margin: -40px 0px 0px 0px;
+}
+
+i.material-icons.chat_menuoption {
+    font-size: 35px;
+    color: #9c9c9c;
+    cursor: pointer;
+}
+
+.chatuser_menu li.active span {
+    color: #11579f;
+}
+
+i.material-icons.add_usergrp {
+    float: right;
+    margin: -40px 70px 0px 0px;
+    font-size: 34px;
+    color: #9c9c9c;
+    cursor: pointer;
+}
+
+.left_sidechat {
+    background: #ddeeff;
+float: left;
+margin: 25px;
+padding: 20px;
+border-radius: 5px;
+width: 300px;
+}
+
+.right_sidechat {
+    background: #fbeedd;
+    float: right;
+    margin: 25px;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+}
+.time-right {
+    float: right;
+    color: #aaa;
+  }
+  
+  .time-left {
+    float: left;
+    color: #999;
+  }
+  .chating_below {
+    background: #eee;
+    padding: 0px 15px;
+   }
+   .send-rpy{
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+   }
+    
+    i.material-icons.send_sms {
+    float: right;
+    margin: -45px 40px 0px 0px;
+    color: #a9a9a9;
+    cursor: pointer;
+    font-size: 30px;
+    }
+    
+    i.material-icons.reply_sms {
+    float: right;
+    margin: -45px 0px 0px 0px;
+    color: #a9a9a9;
+    cursor: pointer;
+    font-size: 30px;
+    }
+    
+    mat-form-field.chat_belowsearch {
+    width: 80%;
     }
 
-    header.chat_userprofile {
-        padding: 10px 0px 10px 0px;
-    }
+    
 
-    .user_img {
-        width: 35%;
-        float: left;
-    }
-
-    .user_img img {
-        width: 65%;
-        border-radius: 50%;
-        margin: 0px 0px 0px 15px;
-    }
-
-    .chat_searchsection {
-        background: #eee;
-        text-align: center;
-        border-top: 1px solid #ddd;
-    }
-
-    mat-form-field.chat_search {
-        width: 90%;
-    }
-
-    i.material-icons.chat_searchicon {
-        float: right;
-        cursor: pointer;
-        margin: -20px 0px 0px 0px;
-    }
-
-    ul.chatuser_menu {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    .chatuser_menu li {
-        border-bottom: 1px solid #eaeaea;
-        cursor: pointer;
-        width: 25%;
-        float: left;
-        text-align: center;
-        background:#f3f3f3ad;
-    }
-
-    .chatuser_menu li a {
-        color: #555;
-        font-size: 13px;
-        font-weight: 500;
-    }
-
-    .user_profile h2 {
-        color: #1256a0;
-        font-size: 18px;
-        padding: 10px 0px 0px 0px;
-    }
-
-    .user_profile h6 {
-        font-size: 14px;
-        font-weight: 200;
-        padding: 0;
-        margin: 0;
-    }
-
-    .user_profile {
-        padding:15px 0px 25px 0px;
-        border-bottom: 1px solid #ddd;
-    }
-
-    i.material-icons.chat_icon {
-        font-size: 27px;
-        padding: 10px 10px 0px 10px;
-    }
-
-    li.active a i.material-icons.chat_icon {
-        color: #11579f;
-    }
-
-    .chatuser_menu li span {
-        color: #555;
-        font-size: 12px;
-        font-weight: 500;
-    }
-
-
-    .chat_userprofile h2{
-        margin-bottom: 4px;
-        color: #1256a0;
-        font-size: 18px;
-    }
-
-    .fade {
-        opacity: 1;
-        transition: opacity .15s linear;
-    }
-
-    header.chat_userprofile p {
-        margin: 0;
-        padding: 0;
-        color: #929292;
-    }
-
-    header.chat_userprofile h6 {
-        font-size: 14px;
-        font-weight: 400;
-        padding: 0;
-        margin: 0;
-        color: #929292;
-    }
-
-    .chats_section {
-        background: #fff;
-        border: 1px solid #eee;
-        padding: 0;
-    }
-
-    .chatsec_header h2 {
-        color: #1256a0;
-        font-size: 18px;
-        padding: 10px 0px 0px 0px;
-    }
-
-    .chatsec_header h6 {
-        font-size: 14px;
-        font-weight: 200;
-        padding: 0;
-        margin: 0;
-    }
-
-    .chat_person {
-        width: 25%;
-        float: left;
-    }
-
-    .chat_person img {
-        width: 45%;
-        border-radius: 50%;
-        margin: 0px 0px 0px 55px;
-    }
-
-    header.chatsec_header {
-        padding: 10px 0px 20px 0px;
-        background: #eee;
-        border-bottom: 1px solid #ddd;
-    }
-
-    button.chat_more.mat-button {
-        float: right;
-        margin: -40px 0px 0px 0px;
-    }
-
-    i.material-icons.chat_menuoption {
-        font-size: 35px;
-        color: #9c9c9c;
-        cursor: pointer;
-    }
-
-    .chatuser_menu li.active span {
-        color: #11579f;
-    }
-
-    i.material-icons.add_usergrp {
-        float: right;
-        margin: -40px 70px 0px 0px;
-        font-size: 40px;
-        color: #9c9c9c;
-        cursor: pointer;
-    }
-
-    .left_sidechat {
-        background: #ddeeff;
-        float: left;
-        margin: 20px 0px 0px 30px;
-        padding: 20px;
-        border-radius: 5px;
-    }
-
-    .right_sidechat {
-        background: #fbeedd;
-        float: right;
-        margin: 30px 30px 0px 0px;
-        padding: 20px;
-        border-radius: 5px;
-        text-align: right;
-    }
-    .time-right {
-        float: right;
-        color: #aaa;
-      }
-      
-      .time-left {
-        float: left;
-        color: #999;
-      }
-      .chating_below {
-        width: 100%;
-        background: #eee;
-        float: left;
-        position: relative;
-        z-index: 10000;
-        top: 10px;
+    @media screen and (max-width:1024px)
+    {
+        .chat_person img 
+        {
+            width: 60%;
+            margin: 4px 0px 0px 27px;
         }
+
         
-        i.material-icons.send_sms {
-        float: right;
-        margin: -45px 40px 0px 0px;
-        color: #a9a9a9;
-        cursor: pointer;
-        font-size: 30px;
-        }
-        
-        i.material-icons.reply_sms {
-        float: right;
-        margin: -45px 0px 0px 0px;
-        color: #a9a9a9;
-        cursor: pointer;
-        font-size: 30px;
-        }
-        
-        mat-form-field.chat_belowsearch {
-        width: 60%;
-        }
+    }

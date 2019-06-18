@@ -90,3 +90,44 @@ img.pro-img1 {
     border-radius: 100px;
     width: 67px;
 }
+.req,.follow-req{
+    box-shadow: 0px 0px 10px #ddddddb3;
+    padding: 10px;
+}
+@media screen and (max-width:768px){
+    .req-listing{
+        flex: 100%;
+        width: 100%;
+        max-width: 100%;
+    }
+    .req-listing:first-child {
+        margin-bottom: 25px;
+    }
+}
+.req-listing{padding-left: 0px !important;}
+.req-listing:last-child{
+    padding-right: 0px !important;
+}
+@media screen and (max-width:1024px) and (min-width:812px){
+    .sec-list .mat-list-item {
+        margin-bottom: 20px;
+        display: inline-flex;
+    }
+    .blue-bg ,.blue-bg1{
+        position: absolute;
+        right: 0;
+        bottom: -25px;
+        left: 77px;
+    }
+    .sec-list .mat-list-text {
+        flex: none;
+    }
+    /* .mat-list-text {
+        flex-wrap: wrap !important;
+    } */
+}
+@media screen and (max-width:768px){
+    .req-listing {
+        padding-right: unset;
+    }
+}
